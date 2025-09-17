@@ -1,0 +1,33 @@
+Team,Conference,Division,Latitude,Longitude,City,State,Stadium,LogoURL
+Buffalo Bills,AFC,East,42.774,-78.787,Orchard Park,New York,Highmark Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/BUF
+Miami Dolphins,AFC,East,25.958056,-80.238889,Miami Gardens,Florida,Hard Rock Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/MIA
+New England Patriots,AFC,East,42.091,-71.264,Foxborough,Massachusetts,Gillette Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NE
+New York Jets,AFC,East,40.813528,-74.074361,East Rutherford,New Jersey,MetLife Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NYJ
+Baltimore Ravens,AFC,North,39.278056,-76.622778,Baltimore,Maryland,M&T Bank Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/BAL
+Cincinnati Bengals,AFC,North,39.095,-84.516,Cincinnati,Ohio,Paycor Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CIN
+Cleveland Browns,AFC,North,41.506111,-81.699444,Cleveland,Ohio,Huntington Bank Field,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CLE
+Pittsburgh Steelers,AFC,North,40.446667,-80.015833,Pittsburgh,Pennsylvania,Acrisure Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/PIT
+Houston Texans,AFC,South,29.684722,-95.410833,Houston,Texas,NRG Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/HOU
+Indianapolis Colts,AFC,South,39.760056,-86.163806,Indianapolis,Indiana,Lucas Oil Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/IND
+Jacksonville Jaguars,AFC,South,30.323889,-81.6375,Jacksonville,Florida,EverBank Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/JAC
+Tennessee Titans,AFC,South,36.166389,-86.771389,Nashville,Tennessee,Nissan Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/TEN
+Denver Broncos,AFC,West,39.7439,-105.0201,Denver,Colorado,Empower Field at Mile High,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DEN
+Kansas City Chiefs,AFC,West,39.048889,-94.483889,Kansas City,Missouri,GEHA Field at Arrowhead Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/KC
+Las Vegas Raiders,AFC,West,36.090833,-115.183611,Paradise,Nevada,Allegiant Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LV
+Los Angeles Chargers,AFC,West,33.95345,-118.3392,Inglewood,California,SoFi Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LAC
+Dallas Cowboys,NFC,East,32.747778,-97.092778,Arlington,Texas,AT&T Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DAL
+New York Giants,NFC,East,40.813528,-74.074361,East Rutherford,New Jersey,MetLife Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NYG
+Philadelphia Eagles,NFC,East,39.900833,-75.1675,Philadelphia,Pennsylvania,Lincoln Financial Field,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/PHI
+Washington Commanders,NFC,East,38.907778,-76.864444,Landover,Maryland,Northwest Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/WAS
+Chicago Bears,NFC,North,41.8623,-87.6167,Chicago,Illinois,Soldier Field,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CHI
+Detroit Lions,NFC,North,42.34,-83.045556,Detroit,Michigan,Ford Field,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DET
+Green Bay Packers,NFC,North,44.501389,-88.062222,Green Bay,Wisconsin,Lambeau Field,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/GB
+Minnesota Vikings,NFC,North,44.974,-93.258,Minneapolis,Minnesota,U.S. Bank Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/MIN
+Atlanta Falcons,NFC,South,33.755556,-84.4,Atlanta,Georgia,Mercedes-Benz Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/ATL
+Carolina Panthers,NFC,South,35.225833,-80.852778,Charlotte,North Carolina,Bank of America Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CAR
+New Orleans Saints,NFC,South,29.950833,-90.081111,New Orleans,Louisiana,Caesars Superdome,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NO
+Tampa Bay Buccaneers,NFC,South,27.975833,-82.503333,Tampa,Florida,Raymond James Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/TB
+Arizona Cardinals,NFC,West,33.528,-112.263,Glendale,Arizona,State Farm Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/ARI
+Los Angeles Rams,NFC,West,33.95345,-118.3392,Inglewood,California,SoFi Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LA
+San Francisco 49ers,NFC,West,37.403,-121.97,Santa Clara,California,Levi's Stadium,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/SF
+Seattle Seahawks,NFC,West,47.5952,-122.3316,Seattle,Washington,Lumen Field,https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/SEA
