@@ -1,6 +1,5 @@
 import pandas as pd
 import folium
-from folium import DivIcon
 import os
 from math import radians, sin, cos, sqrt, atan2
 from branca.element import Template, MacroElement
@@ -102,7 +101,7 @@ legend_html = """
 
 <div style="
     position: fixed; 
-    bottom: 30px; left: 30px; width: 180px; height: 160px; 
+    bottom: 30px; left: 30px; width: 180px; height: 180px; 
     border:2px solid grey; z-index:9999; font-size:14px;
     background-color: white; opacity: 0.85; padding: 10px;">
 <b>Legend</b><br>
@@ -112,6 +111,7 @@ legend_html = """
 <i style="background-color:rgba(255, 255, 0, 0.3); border: 1px solid grey;">&nbsp;&nbsp;&nbsp;</i> North Region <br>
 <i style="background-color:rgba(0, 255, 0, 0.3); border: 1px solid grey;">&nbsp;&nbsp;&nbsp;</i> South Region <br>
 <i style="background-color:rgba(0, 255, 255, 0.3); border: 1px solid grey;">&nbsp;&nbsp;&nbsp;</i> Eastern Region <br>
+<i style="display:inline-block; width:12px; height:12px; border-radius:6px; background:black; margin-right:4px;"></i> Stadium Location <br>
 
 </div>
 
@@ -210,90 +210,6 @@ def calculate_offsets(teams_df, min_distance_km=MIN_DISTANCE_KM):
                                      offsets[team2][1] - lon_offset)
     
     return offsets
-
-# Calculate offsets for all teams
-marker_offsets = calculate_offsets(nfl_df)
-
-# Add team markers with offsets
-for _, row in nfl_df.iterrows():
-    color = Conference_colors.get(row['Conference'], 'gray')
-    popup_text = f"<b>{row['Team']}</b><br>{row['Division']}"
-    
-    # Apply offset if needed
-    offset = marker_offsets.get(row['Team'], (0, 0))
-    lat = row['Latitude'] + offset[0]
-    lon = row['Longitude'] + offset[1]
-    
-    folium.CircleMarker(
-        location=[row['Latitude'], row['Longitude']],
-        radius=3,
-        color='black',
-        fill=True,
-        fillColor='black',
-        fillOpacity=0.8,
-        weight=1,
-        tooltip=f"Original location: {row['Team']}"
-    ).add_to(map)
-
-    logo_icon = folium.CustomIcon(
-        icon_image=row['LogoURL'],
-        icon_size=(30, 30),
-        icon_anchor=(15, 15),
-        popup_anchor=(0, -15)
-    )
-    
-    folium.Marker(
-        location=[lat, lon],
-        popup=popup_text,
-        tooltip=row['Team'],
-        icon=logo_icon
-    ).add_to(map)
-
-# Create division paths
-nfl_df['FullDivision'] = nfl_df['Conference'] + ' ' + nfl_df['Division']
-
-
-# Create a dictionary for team coordinates with offsets
-team_offset_coords = {}
-for _, row in nfl_df.iterrows():
-    offset = marker_offsets.get(row['Team'], (0, 0))
-    team_offset_coords[row['Team']] = (
-        row['Latitude'] + offset[0], 
-        row['Longitude'] + offset[1]
-    )
-
-for division in nfl_df['FullDivision'].unique():
-    division_teams = nfl_df[nfl_df['FullDivision'] == division]
-
-    if len(division_teams) < 2:
-        continue
-        
-    # Get Conference color
-    Conference = division_teams['Conference'].iloc[0]
-    line_color = Conference_colors.get(Conference, 'black')
-    
-    # Check if custom order is defined
-    custom_order = division_orders.get(division, [])
-    path = []
-    
-    if custom_order:
-        # If a custom order is defined, use it but verify teams exist
-        for team in custom_order:
-            if team in team_offset_coords:
-                path.append(team_offset_coords[team])
-            else:
-                print(f"Warning: Team '{team}' not found in division '{division}'")
-    else:
-        # Default case: use the original order from the CSV with offsets
-        for _, team in division_teams.iterrows():
-            if team['Team'] in team_offset_coords:
-                path.append(team_offset_coords[team['Team']])
-
-    # Add path to map only if we have at least 2 points
-    if len(path) >= 2:
-        folium.PolyLine(locations=path, color=line_color, weight=2.5, opacity=0.8).add_to(map)
-    else:
-        print(f"Warning: Not enough valid points for division '{division}' to draw a line")
 
 # WEST
 a = (32, -110)
@@ -467,6 +383,102 @@ folium.Polygon(
 #             tooltip=str(coord)          # Show coordinates on hover
 #         ).add_to(map)
 
+
+
+# Calculate offsets for all teams
+marker_offsets = calculate_offsets(nfl_df)
+
+# Create division paths
+nfl_df['FullDivision'] = nfl_df['Conference'] + ' ' + nfl_df['Division']
+
+
+
+# Add team markers with offsets
+for _, row in nfl_df.iterrows():
+    color = Conference_colors.get(row['Conference'], 'gray')
+    
+    # Apply offset if needed
+    offset = marker_offsets.get(row['Team'], (0, 0))
+    lat = row['Latitude'] + offset[0]
+    lon = row['Longitude'] + offset[1]
+    
+
+    logo_icon = folium.CustomIcon(
+        icon_image=row['LogoURL'],
+        icon_size=(30, 30),
+        icon_anchor=(15, 15),
+        popup_anchor=(0, -15)
+    )
+    
+    folium.Marker(
+        location=[lat, lon],
+        popup=row['FullDivision'],
+        tooltip=row['Team'],
+        icon=logo_icon
+    ).add_to(map)
+
+    stadium_name = row['Stadium']
+    if stadium_name == "MetLife Stadium":
+        stadium_display = "Jets AND Giants Stadium"
+        team_display = "Jets AND Giants"
+    else:
+        stadium_display = stadium_name
+        team_display = row['Team']
+
+    folium.CircleMarker(
+        location=[row['Latitude'], row['Longitude']],
+        radius=3,
+        color='black',
+        fill=True,
+        fillColor='black',
+        fillOpacity=0.8,
+        weight=1,
+        tooltip=stadium_display,
+        popup=f"{team_display}'  {row['Stadium']}"
+    ).add_to(map)
+
+
+# Create a dictionary for team coordinates with offsets
+team_offset_coords = {}
+for _, row in nfl_df.iterrows():
+    offset = marker_offsets.get(row['Team'], (0, 0))
+    team_offset_coords[row['Team']] = (
+        row['Latitude'] + offset[0], 
+        row['Longitude'] + offset[1]
+    )
+
+for division in nfl_df['FullDivision'].unique():
+    division_teams = nfl_df[nfl_df['FullDivision'] == division]
+
+    if len(division_teams) < 2:
+        continue
+        
+    # Get Conference color
+    Conference = division_teams['Conference'].iloc[0]
+    line_color = Conference_colors.get(Conference, 'black')
+    
+    # Check if custom order is defined
+    custom_order = division_orders.get(division, [])
+    path = []
+    
+    if custom_order:
+        # If a custom order is defined, use it but verify teams exist
+        for team in custom_order:
+            if team in team_offset_coords:
+                path.append(team_offset_coords[team])
+            else:
+                print(f"Warning: Team '{team}' not found in division '{division}'")
+    else:
+        # Default case: use the original order from the CSV with offsets
+        for _, team in division_teams.iterrows():
+            if team['Team'] in team_offset_coords:
+                path.append(team_offset_coords[team['Team']])
+
+    # Add path to map only if we have at least 2 points
+    if len(path) >= 2:
+        folium.PolyLine(locations=path, color=line_color, weight=2.5, opacity=0.8).add_to(map)
+    else:
+        print(f"Warning: Not enough valid points for division '{division}' to draw a line")
 
 # Save map
 map.save(OUTPUT_PATH)

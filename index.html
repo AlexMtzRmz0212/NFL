@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_64ab7476459db342885226d3bb00019b {
+                #map_b01b57c1db301f84e18d70bbafcdcbc3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,13 +39,13 @@
 <body>
     
     
-            <div class="folium-map" id="map_64ab7476459db342885226d3bb00019b" ></div>
+            <div class="folium-map" id="map_b01b57c1db301f84e18d70bbafcdcbc3" ></div>
         
     
 
 <div style="
     position: fixed; 
-    bottom: 30px; left: 30px; width: 180px; height: 160px; 
+    bottom: 30px; left: 30px; width: 180px; height: 180px; 
     border:2px solid grey; z-index:9999; font-size:14px;
     background-color: white; opacity: 0.85; padding: 10px;">
 <b>Legend</b><br>
@@ -55,6 +55,7 @@
 <i style="background-color:rgba(255, 255, 0, 0.3); border: 1px solid grey;">&nbsp;&nbsp;&nbsp;</i> North Region <br>
 <i style="background-color:rgba(0, 255, 0, 0.3); border: 1px solid grey;">&nbsp;&nbsp;&nbsp;</i> South Region <br>
 <i style="background-color:rgba(0, 255, 255, 0.3); border: 1px solid grey;">&nbsp;&nbsp;&nbsp;</i> Eastern Region <br>
+<i style="display:inline-block; width:12px; height:12px; border-radius:6px; background:black; margin-right:4px;"></i> Stadium Location <br>
 
 </div>
 
@@ -62,8 +63,8 @@
 <script>
     
     
-            var map_64ab7476459db342885226d3bb00019b = L.map(
-                "map_64ab7476459db342885226d3bb00019b",
+            var map_b01b57c1db301f84e18d70bbafcdcbc3 = L.map(
+                "map_b01b57c1db301f84e18d70bbafcdcbc3",
                 {
                     center: [38.0, -97.0],
                     crs: L.CRS.EPSG3857,
@@ -80,7 +81,7 @@
 
         
     
-            var tile_layer_2825b8c11d3d45400ce813398efb6d68 = L.tileLayer(
+            var tile_layer_e052364b3f83528b335244b945655ebf = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -97,65 +98,73 @@
             );
         
     
-            tile_layer_2825b8c11d3d45400ce813398efb6d68.addTo(map_64ab7476459db342885226d3bb00019b);
+            tile_layer_e052364b3f83528b335244b945655ebf.addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            map_64ab7476459db342885226d3bb00019b.fitBounds(
+            map_b01b57c1db301f84e18d70bbafcdcbc3.fitBounds(
                 [[47, -90], [25, -105]],
                 {}
             );
         
     
-            var circle_marker_6bffe2ba8e056ca9abe8a70a54813c18 = L.circleMarker(
+            var polygon_cc9ec55431ad58d8b3cd8504be731acd = L.polygon(
+                [[49.0, -125.0], [49.0, -95.0], [40.5, -95.0], [40.5, -92.5], [38.0, -92.5], [32.0, -110.0], [32.0, -125.0]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
+        
+    
+            var polygon_aa7e3940d32c52d844fe54bcbec22356 = L.polygon(
+                [[49.0, -95.0], [42.5, -81.5], [39.2, -75.8], [38.7, -84.0], [38.7, -85.0], [40.5, -85.0], [40.5, -95.0]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
+        
+    
+            var polygon_689d4c11d15a8bf0cd3ce01a00b87fad = L.polygon(
+                [[42.5, -81.5], [43.5, -79.0], [43.5, -69.5], [25.5, -79.0], [25.5, -81.5], [37.8, -75.0], [31.9, -98.0], [32.8, -98.0], [36.5, -84.0], [38.7, -84.0], [39.2, -75.8]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
+        
+    
+            var polygon_090aafb22cfe1be02121be5b73bc0355 = L.polygon(
+                [[40.5, -92.5], [40.5, -85.0], [38.7, -85.0], [38.7, -84.0], [36.5, -84.0], [32.8, -98.0], [31.9, -98.0], [37.8, -75.0], [25.5, -81.5], [32.0, -110.0], [38.0, -92.5], [40.5, -92.5]],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
+        
+    
+            var marker_7ab554f85cb0ee2139ea332eeffd1f8e = L.marker(
                 [42.774, -78.787],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
-        
-    
-            circle_marker_6bffe2ba8e056ca9abe8a70a54813c18.bindTooltip(
-                `<div>
-                     Original location: Buffalo Bills
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_b032c64d3638f000f8b9988c6dc17139 = L.marker(
-                [42.774, -78.787],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_c0c09785faf705f23d6a5b78f5cb5dd7 = L.icon({
+        var custom_icon_fd3b8b4b6068f0a2e6dd5d9d5201a2fd = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/BUF",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_b032c64d3638f000f8b9988c6dc17139.setIcon(custom_icon_c0c09785faf705f23d6a5b78f5cb5dd7);
+        marker_7ab554f85cb0ee2139ea332eeffd1f8e.setIcon(custom_icon_fd3b8b4b6068f0a2e6dd5d9d5201a2fd);
         
     
-        var popup_ed1b3dc4006e3d48b2e949b5280f3d95 = L.popup({
+        var popup_d5309320c63839adfb3ee8a9d46eef64 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f4f5e6f3af67308969d2000421769dc8 = $(`<div id="html_f4f5e6f3af67308969d2000421769dc8" style="width: 100.0%; height: 100.0%;"><b>Buffalo Bills</b><br>East</div>`)[0];
-                popup_ed1b3dc4006e3d48b2e949b5280f3d95.setContent(html_f4f5e6f3af67308969d2000421769dc8);
+                var html_99592232097f7b3837e3c52f28943b83 = $(`<div id="html_99592232097f7b3837e3c52f28943b83" style="width: 100.0%; height: 100.0%;">AFC East</div>`)[0];
+                popup_d5309320c63839adfb3ee8a9d46eef64.setContent(html_99592232097f7b3837e3c52f28943b83);
             
         
 
-        marker_b032c64d3638f000f8b9988c6dc17139.bindPopup(popup_ed1b3dc4006e3d48b2e949b5280f3d95)
+        marker_7ab554f85cb0ee2139ea332eeffd1f8e.bindPopup(popup_d5309320c63839adfb3ee8a9d46eef64)
         ;
 
         
     
     
-            marker_b032c64d3638f000f8b9988c6dc17139.bindTooltip(
+            marker_7ab554f85cb0ee2139ea332eeffd1f8e.bindTooltip(
                 `<div>
                      Buffalo Bills
                  </div>`,
@@ -165,18 +174,35 @@
             );
         
     
-                marker_b032c64d3638f000f8b9988c6dc17139.setIcon(custom_icon_c0c09785faf705f23d6a5b78f5cb5dd7);
+                marker_7ab554f85cb0ee2139ea332eeffd1f8e.setIcon(custom_icon_fd3b8b4b6068f0a2e6dd5d9d5201a2fd);
             
     
-            var circle_marker_0141d19209e67acd1119899db94e0bff = L.circleMarker(
-                [25.958056, -80.238889],
+            var circle_marker_cdea4ac50ee2028e25c3a6c98ddf2062 = L.circleMarker(
+                [42.774, -78.787],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_0141d19209e67acd1119899db94e0bff.bindTooltip(
+        var popup_0d301f357c68aae455acf45163376b26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad7a47b554c73541c400bd7b9ad2fd2c = $(`<div id="html_ad7a47b554c73541c400bd7b9ad2fd2c" style="width: 100.0%; height: 100.0%;">Buffalo Bills'  Highmark Stadium</div>`)[0];
+                popup_0d301f357c68aae455acf45163376b26.setContent(html_ad7a47b554c73541c400bd7b9ad2fd2c);
+            
+        
+
+        circle_marker_cdea4ac50ee2028e25c3a6c98ddf2062.bindPopup(popup_0d301f357c68aae455acf45163376b26)
+        ;
+
+        
+    
+    
+            circle_marker_cdea4ac50ee2028e25c3a6c98ddf2062.bindTooltip(
                 `<div>
-                     Original location: Miami Dolphins
+                     Highmark Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -184,40 +210,40 @@
             );
         
     
-            var marker_8316949010f20416f664137498c14df2 = L.marker(
+            var marker_66adbca9a6fa4b056420abaaeda942f5 = L.marker(
                 [25.958056, -80.238889],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_052a10d6d62cbc0f9bfc8fd84fdd8d91 = L.icon({
+        var custom_icon_cf0cb9a76b4b2869e04af0317ac2216f = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/MIA",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_8316949010f20416f664137498c14df2.setIcon(custom_icon_052a10d6d62cbc0f9bfc8fd84fdd8d91);
+        marker_66adbca9a6fa4b056420abaaeda942f5.setIcon(custom_icon_cf0cb9a76b4b2869e04af0317ac2216f);
         
     
-        var popup_34bdb89287c17c677239e8658cc9ddbe = L.popup({
+        var popup_1b28baf13c04cd35e11370ef1c5e4b11 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_c12a8cb374f350e96ddb2da6376fd1c3 = $(`<div id="html_c12a8cb374f350e96ddb2da6376fd1c3" style="width: 100.0%; height: 100.0%;"><b>Miami Dolphins</b><br>East</div>`)[0];
-                popup_34bdb89287c17c677239e8658cc9ddbe.setContent(html_c12a8cb374f350e96ddb2da6376fd1c3);
+                var html_71b5f777e1d4ee114f67efa0b5a6219e = $(`<div id="html_71b5f777e1d4ee114f67efa0b5a6219e" style="width: 100.0%; height: 100.0%;">AFC East</div>`)[0];
+                popup_1b28baf13c04cd35e11370ef1c5e4b11.setContent(html_71b5f777e1d4ee114f67efa0b5a6219e);
             
         
 
-        marker_8316949010f20416f664137498c14df2.bindPopup(popup_34bdb89287c17c677239e8658cc9ddbe)
+        marker_66adbca9a6fa4b056420abaaeda942f5.bindPopup(popup_1b28baf13c04cd35e11370ef1c5e4b11)
         ;
 
         
     
     
-            marker_8316949010f20416f664137498c14df2.bindTooltip(
+            marker_66adbca9a6fa4b056420abaaeda942f5.bindTooltip(
                 `<div>
                      Miami Dolphins
                  </div>`,
@@ -227,18 +253,35 @@
             );
         
     
-                marker_8316949010f20416f664137498c14df2.setIcon(custom_icon_052a10d6d62cbc0f9bfc8fd84fdd8d91);
+                marker_66adbca9a6fa4b056420abaaeda942f5.setIcon(custom_icon_cf0cb9a76b4b2869e04af0317ac2216f);
             
     
-            var circle_marker_b5b4bf58a4d301343f868eecf93a0127 = L.circleMarker(
-                [42.091, -71.264],
+            var circle_marker_57630bf5b25de450a7b1a35cf6f6cd79 = L.circleMarker(
+                [25.958056, -80.238889],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_b5b4bf58a4d301343f868eecf93a0127.bindTooltip(
+        var popup_ad3d8744da87e377f4e02f60c04e9972 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecc3b421f4325acf9e52560752b94ddc = $(`<div id="html_ecc3b421f4325acf9e52560752b94ddc" style="width: 100.0%; height: 100.0%;">Miami Dolphins'  Hard Rock Stadium</div>`)[0];
+                popup_ad3d8744da87e377f4e02f60c04e9972.setContent(html_ecc3b421f4325acf9e52560752b94ddc);
+            
+        
+
+        circle_marker_57630bf5b25de450a7b1a35cf6f6cd79.bindPopup(popup_ad3d8744da87e377f4e02f60c04e9972)
+        ;
+
+        
+    
+    
+            circle_marker_57630bf5b25de450a7b1a35cf6f6cd79.bindTooltip(
                 `<div>
-                     Original location: New England Patriots
+                     Hard Rock Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -246,40 +289,40 @@
             );
         
     
-            var marker_d78fe70b4a1dc232362ce7c559a68ba9 = L.marker(
+            var marker_88c7663193d2fa9aff2764b52063f949 = L.marker(
                 [42.091, -71.264],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_1034cfaacfa7db5fb2ba111af7f82298 = L.icon({
+        var custom_icon_d3b876d4853c00fefc90f6ccdbd9d0f9 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NE",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_d78fe70b4a1dc232362ce7c559a68ba9.setIcon(custom_icon_1034cfaacfa7db5fb2ba111af7f82298);
+        marker_88c7663193d2fa9aff2764b52063f949.setIcon(custom_icon_d3b876d4853c00fefc90f6ccdbd9d0f9);
         
     
-        var popup_050c74b193b1d716b459caa25b151601 = L.popup({
+        var popup_270c8a2941b1077f7df9ccfc4103eaa7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b6efd3879973ce093ae433b141eaaa76 = $(`<div id="html_b6efd3879973ce093ae433b141eaaa76" style="width: 100.0%; height: 100.0%;"><b>New England Patriots</b><br>East</div>`)[0];
-                popup_050c74b193b1d716b459caa25b151601.setContent(html_b6efd3879973ce093ae433b141eaaa76);
+                var html_9dee1cd3b54f23bcbf4cd31a83891e49 = $(`<div id="html_9dee1cd3b54f23bcbf4cd31a83891e49" style="width: 100.0%; height: 100.0%;">AFC East</div>`)[0];
+                popup_270c8a2941b1077f7df9ccfc4103eaa7.setContent(html_9dee1cd3b54f23bcbf4cd31a83891e49);
             
         
 
-        marker_d78fe70b4a1dc232362ce7c559a68ba9.bindPopup(popup_050c74b193b1d716b459caa25b151601)
+        marker_88c7663193d2fa9aff2764b52063f949.bindPopup(popup_270c8a2941b1077f7df9ccfc4103eaa7)
         ;
 
         
     
     
-            marker_d78fe70b4a1dc232362ce7c559a68ba9.bindTooltip(
+            marker_88c7663193d2fa9aff2764b52063f949.bindTooltip(
                 `<div>
                      New England Patriots
                  </div>`,
@@ -289,18 +332,35 @@
             );
         
     
-                marker_d78fe70b4a1dc232362ce7c559a68ba9.setIcon(custom_icon_1034cfaacfa7db5fb2ba111af7f82298);
+                marker_88c7663193d2fa9aff2764b52063f949.setIcon(custom_icon_d3b876d4853c00fefc90f6ccdbd9d0f9);
             
     
-            var circle_marker_f7a6c2d89b88f5c91ab843ad5d57eab4 = L.circleMarker(
-                [40.813528, -74.074361],
+            var circle_marker_648902324803471f51ec592a2ce2ec56 = L.circleMarker(
+                [42.091, -71.264],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_f7a6c2d89b88f5c91ab843ad5d57eab4.bindTooltip(
+        var popup_2864c787cafb6c155274a48031f2295f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ab594eb499035b5a9ccd6d898c02f0b = $(`<div id="html_6ab594eb499035b5a9ccd6d898c02f0b" style="width: 100.0%; height: 100.0%;">New England Patriots'  Gillette Stadium</div>`)[0];
+                popup_2864c787cafb6c155274a48031f2295f.setContent(html_6ab594eb499035b5a9ccd6d898c02f0b);
+            
+        
+
+        circle_marker_648902324803471f51ec592a2ce2ec56.bindPopup(popup_2864c787cafb6c155274a48031f2295f)
+        ;
+
+        
+    
+    
+            circle_marker_648902324803471f51ec592a2ce2ec56.bindTooltip(
                 `<div>
-                     Original location: New York Jets
+                     Gillette Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -308,40 +368,40 @@
             );
         
     
-            var marker_aedde63d3df27dadfeb8cd0b6e8b5767 = L.marker(
+            var marker_926c7b78f2997618a8e8aabd296567e1 = L.marker(
                 [41.28650097297297, -75.15677260722512],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_59ef3ac5d788792909c5a1eea543acfb = L.icon({
+        var custom_icon_268436bc6f4c5646df2d2a5aa27bcdaf = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NYJ",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_aedde63d3df27dadfeb8cd0b6e8b5767.setIcon(custom_icon_59ef3ac5d788792909c5a1eea543acfb);
+        marker_926c7b78f2997618a8e8aabd296567e1.setIcon(custom_icon_268436bc6f4c5646df2d2a5aa27bcdaf);
         
     
-        var popup_f2fb20a8e58e94336d9e4d65c0bdf3ec = L.popup({
+        var popup_dc74571ea8687a59b281271579085073 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_4475e5199eaf4507fee1e9494ff90179 = $(`<div id="html_4475e5199eaf4507fee1e9494ff90179" style="width: 100.0%; height: 100.0%;"><b>New York Jets</b><br>East</div>`)[0];
-                popup_f2fb20a8e58e94336d9e4d65c0bdf3ec.setContent(html_4475e5199eaf4507fee1e9494ff90179);
+                var html_365df0bebb0ad44ed9330b01918a2686 = $(`<div id="html_365df0bebb0ad44ed9330b01918a2686" style="width: 100.0%; height: 100.0%;">AFC East</div>`)[0];
+                popup_dc74571ea8687a59b281271579085073.setContent(html_365df0bebb0ad44ed9330b01918a2686);
             
         
 
-        marker_aedde63d3df27dadfeb8cd0b6e8b5767.bindPopup(popup_f2fb20a8e58e94336d9e4d65c0bdf3ec)
+        marker_926c7b78f2997618a8e8aabd296567e1.bindPopup(popup_dc74571ea8687a59b281271579085073)
         ;
 
         
     
     
-            marker_aedde63d3df27dadfeb8cd0b6e8b5767.bindTooltip(
+            marker_926c7b78f2997618a8e8aabd296567e1.bindTooltip(
                 `<div>
                      New York Jets
                  </div>`,
@@ -351,18 +411,35 @@
             );
         
     
-                marker_aedde63d3df27dadfeb8cd0b6e8b5767.setIcon(custom_icon_59ef3ac5d788792909c5a1eea543acfb);
+                marker_926c7b78f2997618a8e8aabd296567e1.setIcon(custom_icon_268436bc6f4c5646df2d2a5aa27bcdaf);
             
     
-            var circle_marker_7918934da087ba47bce0a0401f1525d9 = L.circleMarker(
-                [39.278056, -76.622778],
+            var circle_marker_a49680e062dfc3eac803cca92397f5b1 = L.circleMarker(
+                [40.813528, -74.074361],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_7918934da087ba47bce0a0401f1525d9.bindTooltip(
+        var popup_437714a9b828f28f208478e395ea1720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9df7e8ee0340f24e61a2ed2a2bc93cd9 = $(`<div id="html_9df7e8ee0340f24e61a2ed2a2bc93cd9" style="width: 100.0%; height: 100.0%;">Jets AND Giants'  MetLife Stadium</div>`)[0];
+                popup_437714a9b828f28f208478e395ea1720.setContent(html_9df7e8ee0340f24e61a2ed2a2bc93cd9);
+            
+        
+
+        circle_marker_a49680e062dfc3eac803cca92397f5b1.bindPopup(popup_437714a9b828f28f208478e395ea1720)
+        ;
+
+        
+    
+    
+            circle_marker_a49680e062dfc3eac803cca92397f5b1.bindTooltip(
                 `<div>
-                     Original location: Baltimore Ravens
+                     Jets AND Giants Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -370,40 +447,40 @@
             );
         
     
-            var marker_19ee65dc6e2a279e5bedb86767cc8940 = L.marker(
+            var marker_3f48233fe90c0c716eca1283ca9153b6 = L.marker(
                 [39.81512887175852, -77.82450678110692],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_f142983bd878871c1e7458749c7c76da = L.icon({
+        var custom_icon_9cb36f990931288b52c43e07a2e0d783 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/BAL",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_19ee65dc6e2a279e5bedb86767cc8940.setIcon(custom_icon_f142983bd878871c1e7458749c7c76da);
+        marker_3f48233fe90c0c716eca1283ca9153b6.setIcon(custom_icon_9cb36f990931288b52c43e07a2e0d783);
         
     
-        var popup_8b9fb65b31e821b85e3988be45d47ed9 = L.popup({
+        var popup_2bff75b66d4f2afa126cc2bfbf9d9bde = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9dca6eb2396c38e6d57c63034c5eee1b = $(`<div id="html_9dca6eb2396c38e6d57c63034c5eee1b" style="width: 100.0%; height: 100.0%;"><b>Baltimore Ravens</b><br>North</div>`)[0];
-                popup_8b9fb65b31e821b85e3988be45d47ed9.setContent(html_9dca6eb2396c38e6d57c63034c5eee1b);
+                var html_550f4787a73592ad8fa076a189dd5fa9 = $(`<div id="html_550f4787a73592ad8fa076a189dd5fa9" style="width: 100.0%; height: 100.0%;">AFC North</div>`)[0];
+                popup_2bff75b66d4f2afa126cc2bfbf9d9bde.setContent(html_550f4787a73592ad8fa076a189dd5fa9);
             
         
 
-        marker_19ee65dc6e2a279e5bedb86767cc8940.bindPopup(popup_8b9fb65b31e821b85e3988be45d47ed9)
+        marker_3f48233fe90c0c716eca1283ca9153b6.bindPopup(popup_2bff75b66d4f2afa126cc2bfbf9d9bde)
         ;
 
         
     
     
-            marker_19ee65dc6e2a279e5bedb86767cc8940.bindTooltip(
+            marker_3f48233fe90c0c716eca1283ca9153b6.bindTooltip(
                 `<div>
                      Baltimore Ravens
                  </div>`,
@@ -413,18 +490,35 @@
             );
         
     
-                marker_19ee65dc6e2a279e5bedb86767cc8940.setIcon(custom_icon_f142983bd878871c1e7458749c7c76da);
+                marker_3f48233fe90c0c716eca1283ca9153b6.setIcon(custom_icon_9cb36f990931288b52c43e07a2e0d783);
             
     
-            var circle_marker_2ea9db6400f70ce286b8206daee5c2fb = L.circleMarker(
-                [39.095, -84.516],
+            var circle_marker_969737715ca53364cd9d8868e6145fe6 = L.circleMarker(
+                [39.278056, -76.622778],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_2ea9db6400f70ce286b8206daee5c2fb.bindTooltip(
+        var popup_0ea05efa0623562b238436e36eb975ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4b0bd84afdd012542726d1561d7428b = $(`<div id="html_c4b0bd84afdd012542726d1561d7428b" style="width: 100.0%; height: 100.0%;">Baltimore Ravens'  M&T Bank Stadium</div>`)[0];
+                popup_0ea05efa0623562b238436e36eb975ba.setContent(html_c4b0bd84afdd012542726d1561d7428b);
+            
+        
+
+        circle_marker_969737715ca53364cd9d8868e6145fe6.bindPopup(popup_0ea05efa0623562b238436e36eb975ba)
+        ;
+
+        
+    
+    
+            circle_marker_969737715ca53364cd9d8868e6145fe6.bindTooltip(
                 `<div>
-                     Original location: Cincinnati Bengals
+                     M&T Bank Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -432,40 +526,40 @@
             );
         
     
-            var marker_dca45ea27ba67604e71cf65bb2d50b4e = L.marker(
+            var marker_4f5beb42b96817e5df295c61fec8c1a9 = L.marker(
                 [39.095, -84.516],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_40dfdc07089e155c355e4b90b27a7e69 = L.icon({
+        var custom_icon_c5becbd83bd89b410cb59b008f8871ab = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CIN",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_dca45ea27ba67604e71cf65bb2d50b4e.setIcon(custom_icon_40dfdc07089e155c355e4b90b27a7e69);
+        marker_4f5beb42b96817e5df295c61fec8c1a9.setIcon(custom_icon_c5becbd83bd89b410cb59b008f8871ab);
         
     
-        var popup_23b6c29ecee8e21e65871a6a9097e043 = L.popup({
+        var popup_774f716baeca0e06eba351d5af62c2aa = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2b5a1df67aa90bb555febdba41505ce7 = $(`<div id="html_2b5a1df67aa90bb555febdba41505ce7" style="width: 100.0%; height: 100.0%;"><b>Cincinnati Bengals</b><br>North</div>`)[0];
-                popup_23b6c29ecee8e21e65871a6a9097e043.setContent(html_2b5a1df67aa90bb555febdba41505ce7);
+                var html_7b58afb5dfc5f1443cb49f8f38823d4c = $(`<div id="html_7b58afb5dfc5f1443cb49f8f38823d4c" style="width: 100.0%; height: 100.0%;">AFC North</div>`)[0];
+                popup_774f716baeca0e06eba351d5af62c2aa.setContent(html_7b58afb5dfc5f1443cb49f8f38823d4c);
             
         
 
-        marker_dca45ea27ba67604e71cf65bb2d50b4e.bindPopup(popup_23b6c29ecee8e21e65871a6a9097e043)
+        marker_4f5beb42b96817e5df295c61fec8c1a9.bindPopup(popup_774f716baeca0e06eba351d5af62c2aa)
         ;
 
         
     
     
-            marker_dca45ea27ba67604e71cf65bb2d50b4e.bindTooltip(
+            marker_4f5beb42b96817e5df295c61fec8c1a9.bindTooltip(
                 `<div>
                      Cincinnati Bengals
                  </div>`,
@@ -475,18 +569,35 @@
             );
         
     
-                marker_dca45ea27ba67604e71cf65bb2d50b4e.setIcon(custom_icon_40dfdc07089e155c355e4b90b27a7e69);
+                marker_4f5beb42b96817e5df295c61fec8c1a9.setIcon(custom_icon_c5becbd83bd89b410cb59b008f8871ab);
             
     
-            var circle_marker_745d72bb4406247795833e285739b2ca = L.circleMarker(
-                [41.506111, -81.699444],
+            var circle_marker_89f6a633d5fd18bbea8c999c4c603841 = L.circleMarker(
+                [39.095, -84.516],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_745d72bb4406247795833e285739b2ca.bindTooltip(
+        var popup_5f4b71e9b9511a57ef940f04d2fa86b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d96bf599ab9de23170d55ba95d8627e = $(`<div id="html_1d96bf599ab9de23170d55ba95d8627e" style="width: 100.0%; height: 100.0%;">Cincinnati Bengals'  Paycor Stadium</div>`)[0];
+                popup_5f4b71e9b9511a57ef940f04d2fa86b0.setContent(html_1d96bf599ab9de23170d55ba95d8627e);
+            
+        
+
+        circle_marker_89f6a633d5fd18bbea8c999c4c603841.bindPopup(popup_5f4b71e9b9511a57ef940f04d2fa86b0)
+        ;
+
+        
+    
+    
+            circle_marker_89f6a633d5fd18bbea8c999c4c603841.bindTooltip(
                 `<div>
-                     Original location: Cleveland Browns
+                     Paycor Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -494,40 +605,40 @@
             );
         
     
-            var marker_f4fbf4b517d6cf9ff18b91fc6302092f = L.marker(
+            var marker_9424acad43865c7fefaffa30a756775d = L.marker(
                 [41.506111, -81.699444],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_bb7cc6cd913b20cd14f5b8a13d939020 = L.icon({
+        var custom_icon_e00aefeed15cd628c8b73062a821a1bd = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CLE",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_f4fbf4b517d6cf9ff18b91fc6302092f.setIcon(custom_icon_bb7cc6cd913b20cd14f5b8a13d939020);
+        marker_9424acad43865c7fefaffa30a756775d.setIcon(custom_icon_e00aefeed15cd628c8b73062a821a1bd);
         
     
-        var popup_2cf378921187ae0d0862df57a6c349a8 = L.popup({
+        var popup_5ea3ca72b82898266843fb6f4494cb37 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_554a5198097a6105faa2c8f41ec2df0c = $(`<div id="html_554a5198097a6105faa2c8f41ec2df0c" style="width: 100.0%; height: 100.0%;"><b>Cleveland Browns</b><br>North</div>`)[0];
-                popup_2cf378921187ae0d0862df57a6c349a8.setContent(html_554a5198097a6105faa2c8f41ec2df0c);
+                var html_cf8019277667eeb78e67e7377ff0425a = $(`<div id="html_cf8019277667eeb78e67e7377ff0425a" style="width: 100.0%; height: 100.0%;">AFC North</div>`)[0];
+                popup_5ea3ca72b82898266843fb6f4494cb37.setContent(html_cf8019277667eeb78e67e7377ff0425a);
             
         
 
-        marker_f4fbf4b517d6cf9ff18b91fc6302092f.bindPopup(popup_2cf378921187ae0d0862df57a6c349a8)
+        marker_9424acad43865c7fefaffa30a756775d.bindPopup(popup_5ea3ca72b82898266843fb6f4494cb37)
         ;
 
         
     
     
-            marker_f4fbf4b517d6cf9ff18b91fc6302092f.bindTooltip(
+            marker_9424acad43865c7fefaffa30a756775d.bindTooltip(
                 `<div>
                      Cleveland Browns
                  </div>`,
@@ -537,18 +648,35 @@
             );
         
     
-                marker_f4fbf4b517d6cf9ff18b91fc6302092f.setIcon(custom_icon_bb7cc6cd913b20cd14f5b8a13d939020);
+                marker_9424acad43865c7fefaffa30a756775d.setIcon(custom_icon_e00aefeed15cd628c8b73062a821a1bd);
             
     
-            var circle_marker_4e1bc80717a4bedeab0661160979a620 = L.circleMarker(
-                [40.446667, -80.015833],
+            var circle_marker_ae4b8087c07417650cd1ec2b77c34410 = L.circleMarker(
+                [41.506111, -81.699444],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_4e1bc80717a4bedeab0661160979a620.bindTooltip(
+        var popup_d95c45a43fdf55e52e47c3b81e448090 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ac198ab09bda32cda0ea26638b09574 = $(`<div id="html_5ac198ab09bda32cda0ea26638b09574" style="width: 100.0%; height: 100.0%;">Cleveland Browns'  Huntington Bank Field</div>`)[0];
+                popup_d95c45a43fdf55e52e47c3b81e448090.setContent(html_5ac198ab09bda32cda0ea26638b09574);
+            
+        
+
+        circle_marker_ae4b8087c07417650cd1ec2b77c34410.bindPopup(popup_d95c45a43fdf55e52e47c3b81e448090)
+        ;
+
+        
+    
+    
+            circle_marker_ae4b8087c07417650cd1ec2b77c34410.bindTooltip(
                 `<div>
-                     Original location: Pittsburgh Steelers
+                     Huntington Bank Field
                  </div>`,
                 {
   "sticky": true,
@@ -556,40 +684,40 @@
             );
         
     
-            var marker_f5b83feced175db066b5996df60ad981 = L.marker(
+            var marker_661cab42dbd9f8991f94a24daa68129f = L.marker(
                 [40.446667, -80.015833],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_c2132519a8f29b506177bf5060a3ff6f = L.icon({
+        var custom_icon_f11d91e023c12da386fc91095c363609 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/PIT",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_f5b83feced175db066b5996df60ad981.setIcon(custom_icon_c2132519a8f29b506177bf5060a3ff6f);
+        marker_661cab42dbd9f8991f94a24daa68129f.setIcon(custom_icon_f11d91e023c12da386fc91095c363609);
         
     
-        var popup_89c21ef33140e654b6fc06ff8219add3 = L.popup({
+        var popup_cb90a875131956a479f3e289d343f9f5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_dd01e42aa603e648bbb92d5e34c580e7 = $(`<div id="html_dd01e42aa603e648bbb92d5e34c580e7" style="width: 100.0%; height: 100.0%;"><b>Pittsburgh Steelers</b><br>North</div>`)[0];
-                popup_89c21ef33140e654b6fc06ff8219add3.setContent(html_dd01e42aa603e648bbb92d5e34c580e7);
+                var html_8dc6954d20f46b0470bfc8ba9016a962 = $(`<div id="html_8dc6954d20f46b0470bfc8ba9016a962" style="width: 100.0%; height: 100.0%;">AFC North</div>`)[0];
+                popup_cb90a875131956a479f3e289d343f9f5.setContent(html_8dc6954d20f46b0470bfc8ba9016a962);
             
         
 
-        marker_f5b83feced175db066b5996df60ad981.bindPopup(popup_89c21ef33140e654b6fc06ff8219add3)
+        marker_661cab42dbd9f8991f94a24daa68129f.bindPopup(popup_cb90a875131956a479f3e289d343f9f5)
         ;
 
         
     
     
-            marker_f5b83feced175db066b5996df60ad981.bindTooltip(
+            marker_661cab42dbd9f8991f94a24daa68129f.bindTooltip(
                 `<div>
                      Pittsburgh Steelers
                  </div>`,
@@ -599,18 +727,35 @@
             );
         
     
-                marker_f5b83feced175db066b5996df60ad981.setIcon(custom_icon_c2132519a8f29b506177bf5060a3ff6f);
+                marker_661cab42dbd9f8991f94a24daa68129f.setIcon(custom_icon_f11d91e023c12da386fc91095c363609);
             
     
-            var circle_marker_469cd97ba7962a98de5302479be903b0 = L.circleMarker(
-                [29.684722, -95.410833],
+            var circle_marker_0e63b51bb143660c141a5aaa1074e3bc = L.circleMarker(
+                [40.446667, -80.015833],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_469cd97ba7962a98de5302479be903b0.bindTooltip(
+        var popup_10d1247a6302985280877ab8290c1658 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f16c1a51232de5a860fb8ebceafa6f0c = $(`<div id="html_f16c1a51232de5a860fb8ebceafa6f0c" style="width: 100.0%; height: 100.0%;">Pittsburgh Steelers'  Acrisure Stadium</div>`)[0];
+                popup_10d1247a6302985280877ab8290c1658.setContent(html_f16c1a51232de5a860fb8ebceafa6f0c);
+            
+        
+
+        circle_marker_0e63b51bb143660c141a5aaa1074e3bc.bindPopup(popup_10d1247a6302985280877ab8290c1658)
+        ;
+
+        
+    
+    
+            circle_marker_0e63b51bb143660c141a5aaa1074e3bc.bindTooltip(
                 `<div>
-                     Original location: Houston Texans
+                     Acrisure Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -618,40 +763,40 @@
             );
         
     
-            var marker_d69d4825de74efa895ebc780d0993ca5 = L.marker(
+            var marker_52041daba754d7638688c8d7bb0faefd = L.marker(
                 [29.684722, -95.410833],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_ac66c441bddd44320195f363d36eb847 = L.icon({
+        var custom_icon_86803e2bc2d0ed0ca54ec407dd0990cd = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/HOU",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_d69d4825de74efa895ebc780d0993ca5.setIcon(custom_icon_ac66c441bddd44320195f363d36eb847);
+        marker_52041daba754d7638688c8d7bb0faefd.setIcon(custom_icon_86803e2bc2d0ed0ca54ec407dd0990cd);
         
     
-        var popup_9eaef521b26bdf0656d0c0aa9dd5aebf = L.popup({
+        var popup_99f25aebbdd39ac2870553ec3d9f58f4 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_98933c15e28e3e64d4c7ca18c51030f6 = $(`<div id="html_98933c15e28e3e64d4c7ca18c51030f6" style="width: 100.0%; height: 100.0%;"><b>Houston Texans</b><br>South</div>`)[0];
-                popup_9eaef521b26bdf0656d0c0aa9dd5aebf.setContent(html_98933c15e28e3e64d4c7ca18c51030f6);
+                var html_a5bf1ea1c5ecbd270d0eab327ab7a79a = $(`<div id="html_a5bf1ea1c5ecbd270d0eab327ab7a79a" style="width: 100.0%; height: 100.0%;">AFC South</div>`)[0];
+                popup_99f25aebbdd39ac2870553ec3d9f58f4.setContent(html_a5bf1ea1c5ecbd270d0eab327ab7a79a);
             
         
 
-        marker_d69d4825de74efa895ebc780d0993ca5.bindPopup(popup_9eaef521b26bdf0656d0c0aa9dd5aebf)
+        marker_52041daba754d7638688c8d7bb0faefd.bindPopup(popup_99f25aebbdd39ac2870553ec3d9f58f4)
         ;
 
         
     
     
-            marker_d69d4825de74efa895ebc780d0993ca5.bindTooltip(
+            marker_52041daba754d7638688c8d7bb0faefd.bindTooltip(
                 `<div>
                      Houston Texans
                  </div>`,
@@ -661,18 +806,35 @@
             );
         
     
-                marker_d69d4825de74efa895ebc780d0993ca5.setIcon(custom_icon_ac66c441bddd44320195f363d36eb847);
+                marker_52041daba754d7638688c8d7bb0faefd.setIcon(custom_icon_86803e2bc2d0ed0ca54ec407dd0990cd);
             
     
-            var circle_marker_60d6b43f8e3ed2d70e3eb78911b34fc3 = L.circleMarker(
-                [39.760056, -86.163806],
+            var circle_marker_cb8fdcea0c75f2cf99796182e9efa19d = L.circleMarker(
+                [29.684722, -95.410833],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_60d6b43f8e3ed2d70e3eb78911b34fc3.bindTooltip(
+        var popup_19c3d9d5259deb4a366ff5afbc8a8239 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f44da12c55ac85265e4da46c157e157 = $(`<div id="html_3f44da12c55ac85265e4da46c157e157" style="width: 100.0%; height: 100.0%;">Houston Texans'  NRG Stadium</div>`)[0];
+                popup_19c3d9d5259deb4a366ff5afbc8a8239.setContent(html_3f44da12c55ac85265e4da46c157e157);
+            
+        
+
+        circle_marker_cb8fdcea0c75f2cf99796182e9efa19d.bindPopup(popup_19c3d9d5259deb4a366ff5afbc8a8239)
+        ;
+
+        
+    
+    
+            circle_marker_cb8fdcea0c75f2cf99796182e9efa19d.bindTooltip(
                 `<div>
-                     Original location: Indianapolis Colts
+                     NRG Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -680,40 +842,40 @@
             );
         
     
-            var marker_d94ec635e9efc24945e092bf0b53bf90 = L.marker(
+            var marker_09772dfb6a7323b1735f24ba8366ceef = L.marker(
                 [39.760056, -86.163806],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_604ca0f94675951746b53214cab14ddf = L.icon({
+        var custom_icon_820d0969fe24893f744ffc7d4835be9e = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/IND",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_d94ec635e9efc24945e092bf0b53bf90.setIcon(custom_icon_604ca0f94675951746b53214cab14ddf);
+        marker_09772dfb6a7323b1735f24ba8366ceef.setIcon(custom_icon_820d0969fe24893f744ffc7d4835be9e);
         
     
-        var popup_babbe9daa08c2a7887c59bb121ce7175 = L.popup({
+        var popup_7a038c46b81ae8e10f69f64181208334 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_210e6e78f9b6dd9ec2f62a5ce6cb826a = $(`<div id="html_210e6e78f9b6dd9ec2f62a5ce6cb826a" style="width: 100.0%; height: 100.0%;"><b>Indianapolis Colts</b><br>South</div>`)[0];
-                popup_babbe9daa08c2a7887c59bb121ce7175.setContent(html_210e6e78f9b6dd9ec2f62a5ce6cb826a);
+                var html_6925193ce69952af9f5a34d1ea78f79d = $(`<div id="html_6925193ce69952af9f5a34d1ea78f79d" style="width: 100.0%; height: 100.0%;">AFC South</div>`)[0];
+                popup_7a038c46b81ae8e10f69f64181208334.setContent(html_6925193ce69952af9f5a34d1ea78f79d);
             
         
 
-        marker_d94ec635e9efc24945e092bf0b53bf90.bindPopup(popup_babbe9daa08c2a7887c59bb121ce7175)
+        marker_09772dfb6a7323b1735f24ba8366ceef.bindPopup(popup_7a038c46b81ae8e10f69f64181208334)
         ;
 
         
     
     
-            marker_d94ec635e9efc24945e092bf0b53bf90.bindTooltip(
+            marker_09772dfb6a7323b1735f24ba8366ceef.bindTooltip(
                 `<div>
                      Indianapolis Colts
                  </div>`,
@@ -723,18 +885,35 @@
             );
         
     
-                marker_d94ec635e9efc24945e092bf0b53bf90.setIcon(custom_icon_604ca0f94675951746b53214cab14ddf);
+                marker_09772dfb6a7323b1735f24ba8366ceef.setIcon(custom_icon_820d0969fe24893f744ffc7d4835be9e);
             
     
-            var circle_marker_530d4c3bd3d1382d92052a22c1e92d3e = L.circleMarker(
-                [30.323889, -81.6375],
+            var circle_marker_09d8235b68590786bf4c7a3f048ba35d = L.circleMarker(
+                [39.760056, -86.163806],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_530d4c3bd3d1382d92052a22c1e92d3e.bindTooltip(
+        var popup_5043690d39e5a3a278e2b181920c2d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b271c34ce5a3d2354ffc3422e11b18c = $(`<div id="html_7b271c34ce5a3d2354ffc3422e11b18c" style="width: 100.0%; height: 100.0%;">Indianapolis Colts'  Lucas Oil Stadium</div>`)[0];
+                popup_5043690d39e5a3a278e2b181920c2d8c.setContent(html_7b271c34ce5a3d2354ffc3422e11b18c);
+            
+        
+
+        circle_marker_09d8235b68590786bf4c7a3f048ba35d.bindPopup(popup_5043690d39e5a3a278e2b181920c2d8c)
+        ;
+
+        
+    
+    
+            circle_marker_09d8235b68590786bf4c7a3f048ba35d.bindTooltip(
                 `<div>
-                     Original location: Jacksonville Jaguars
+                     Lucas Oil Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -742,40 +921,40 @@
             );
         
     
-            var marker_cafd2249df3b358246c88f52895ef452 = L.marker(
+            var marker_f722a03f49904d262447d19a8c308196 = L.marker(
                 [30.323889, -81.6375],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_6aad488ac299334d72b5de517255f828 = L.icon({
+        var custom_icon_9c823e4102ae02ff7f32a0fa4b58bf2c = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/JAC",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_cafd2249df3b358246c88f52895ef452.setIcon(custom_icon_6aad488ac299334d72b5de517255f828);
+        marker_f722a03f49904d262447d19a8c308196.setIcon(custom_icon_9c823e4102ae02ff7f32a0fa4b58bf2c);
         
     
-        var popup_dbfc22a08dcaa6ba4147dd5f9a214696 = L.popup({
+        var popup_a581e0dffccdf4ee4da3346e7f5292b6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b4c673daded91213db5c4c2740038462 = $(`<div id="html_b4c673daded91213db5c4c2740038462" style="width: 100.0%; height: 100.0%;"><b>Jacksonville Jaguars</b><br>South</div>`)[0];
-                popup_dbfc22a08dcaa6ba4147dd5f9a214696.setContent(html_b4c673daded91213db5c4c2740038462);
+                var html_0d9f34c3a8f9251d844d8664f74077a2 = $(`<div id="html_0d9f34c3a8f9251d844d8664f74077a2" style="width: 100.0%; height: 100.0%;">AFC South</div>`)[0];
+                popup_a581e0dffccdf4ee4da3346e7f5292b6.setContent(html_0d9f34c3a8f9251d844d8664f74077a2);
             
         
 
-        marker_cafd2249df3b358246c88f52895ef452.bindPopup(popup_dbfc22a08dcaa6ba4147dd5f9a214696)
+        marker_f722a03f49904d262447d19a8c308196.bindPopup(popup_a581e0dffccdf4ee4da3346e7f5292b6)
         ;
 
         
     
     
-            marker_cafd2249df3b358246c88f52895ef452.bindTooltip(
+            marker_f722a03f49904d262447d19a8c308196.bindTooltip(
                 `<div>
                      Jacksonville Jaguars
                  </div>`,
@@ -785,18 +964,35 @@
             );
         
     
-                marker_cafd2249df3b358246c88f52895ef452.setIcon(custom_icon_6aad488ac299334d72b5de517255f828);
+                marker_f722a03f49904d262447d19a8c308196.setIcon(custom_icon_9c823e4102ae02ff7f32a0fa4b58bf2c);
             
     
-            var circle_marker_fa03784a02bd98519f766ae60a942f4c = L.circleMarker(
-                [36.166389, -86.771389],
+            var circle_marker_b6f876d5a52f85209e952bb0510e7f10 = L.circleMarker(
+                [30.323889, -81.6375],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_fa03784a02bd98519f766ae60a942f4c.bindTooltip(
+        var popup_878412f6b21081eac36d867192995d82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb1c5b1e476fbe2b496ffa716dd3fd75 = $(`<div id="html_eb1c5b1e476fbe2b496ffa716dd3fd75" style="width: 100.0%; height: 100.0%;">Jacksonville Jaguars'  EverBank Stadium</div>`)[0];
+                popup_878412f6b21081eac36d867192995d82.setContent(html_eb1c5b1e476fbe2b496ffa716dd3fd75);
+            
+        
+
+        circle_marker_b6f876d5a52f85209e952bb0510e7f10.bindPopup(popup_878412f6b21081eac36d867192995d82)
+        ;
+
+        
+    
+    
+            circle_marker_b6f876d5a52f85209e952bb0510e7f10.bindTooltip(
                 `<div>
-                     Original location: Tennessee Titans
+                     EverBank Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -804,40 +1000,40 @@
             );
         
     
-            var marker_26735d6da3431bfc67021398876b9a43 = L.marker(
+            var marker_004db00678f426433d7c45d1f3326573 = L.marker(
                 [36.166389, -86.771389],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_31a6fe759a994a6aec625a079617d7dc = L.icon({
+        var custom_icon_3a0d707adc76d73b06d305051306e10c = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/TEN",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_26735d6da3431bfc67021398876b9a43.setIcon(custom_icon_31a6fe759a994a6aec625a079617d7dc);
+        marker_004db00678f426433d7c45d1f3326573.setIcon(custom_icon_3a0d707adc76d73b06d305051306e10c);
         
     
-        var popup_291ba20cdbc858cb3ef20b4469541d3b = L.popup({
+        var popup_0eba0cda908a38dc181437a3e20c30d1 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7e86a7c715adc7b01714cffaf598ba93 = $(`<div id="html_7e86a7c715adc7b01714cffaf598ba93" style="width: 100.0%; height: 100.0%;"><b>Tennessee Titans</b><br>South</div>`)[0];
-                popup_291ba20cdbc858cb3ef20b4469541d3b.setContent(html_7e86a7c715adc7b01714cffaf598ba93);
+                var html_80994c7e64612cc14fadce1e3a6c09bc = $(`<div id="html_80994c7e64612cc14fadce1e3a6c09bc" style="width: 100.0%; height: 100.0%;">AFC South</div>`)[0];
+                popup_0eba0cda908a38dc181437a3e20c30d1.setContent(html_80994c7e64612cc14fadce1e3a6c09bc);
             
         
 
-        marker_26735d6da3431bfc67021398876b9a43.bindPopup(popup_291ba20cdbc858cb3ef20b4469541d3b)
+        marker_004db00678f426433d7c45d1f3326573.bindPopup(popup_0eba0cda908a38dc181437a3e20c30d1)
         ;
 
         
     
     
-            marker_26735d6da3431bfc67021398876b9a43.bindTooltip(
+            marker_004db00678f426433d7c45d1f3326573.bindTooltip(
                 `<div>
                      Tennessee Titans
                  </div>`,
@@ -847,18 +1043,35 @@
             );
         
     
-                marker_26735d6da3431bfc67021398876b9a43.setIcon(custom_icon_31a6fe759a994a6aec625a079617d7dc);
+                marker_004db00678f426433d7c45d1f3326573.setIcon(custom_icon_3a0d707adc76d73b06d305051306e10c);
             
     
-            var circle_marker_1832957ca8acc73d252d450a1964ce3b = L.circleMarker(
-                [39.7439, -105.0201],
+            var circle_marker_b2e0a429d77eeb435ed2cd0c680c3df4 = L.circleMarker(
+                [36.166389, -86.771389],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_1832957ca8acc73d252d450a1964ce3b.bindTooltip(
+        var popup_818198e1a695c9b832267b4b3b85eb66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e859364c9fbad79ce52eabfcd0204d9 = $(`<div id="html_5e859364c9fbad79ce52eabfcd0204d9" style="width: 100.0%; height: 100.0%;">Tennessee Titans'  Nissan Stadium</div>`)[0];
+                popup_818198e1a695c9b832267b4b3b85eb66.setContent(html_5e859364c9fbad79ce52eabfcd0204d9);
+            
+        
+
+        circle_marker_b2e0a429d77eeb435ed2cd0c680c3df4.bindPopup(popup_818198e1a695c9b832267b4b3b85eb66)
+        ;
+
+        
+    
+    
+            circle_marker_b2e0a429d77eeb435ed2cd0c680c3df4.bindTooltip(
                 `<div>
-                     Original location: Denver Broncos
+                     Nissan Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -866,40 +1079,40 @@
             );
         
     
-            var marker_f42a31914424beadc64b3f01241c1570 = L.marker(
+            var marker_9a91f30c75c54c8c7b0cb5538060e349 = L.marker(
                 [39.7439, -105.0201],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_caecd9c664ed041fe759de2833f56081 = L.icon({
+        var custom_icon_5b5c7eaa9046ba333ed3f9676624c92f = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DEN",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_f42a31914424beadc64b3f01241c1570.setIcon(custom_icon_caecd9c664ed041fe759de2833f56081);
+        marker_9a91f30c75c54c8c7b0cb5538060e349.setIcon(custom_icon_5b5c7eaa9046ba333ed3f9676624c92f);
         
     
-        var popup_598f030c6e883b6f5156a7a1736aa2a1 = L.popup({
+        var popup_981d6323d6cea278e6cb8226251fa9b0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8d15f4fbf2b656b56bb208c3ad67fc57 = $(`<div id="html_8d15f4fbf2b656b56bb208c3ad67fc57" style="width: 100.0%; height: 100.0%;"><b>Denver Broncos</b><br>West</div>`)[0];
-                popup_598f030c6e883b6f5156a7a1736aa2a1.setContent(html_8d15f4fbf2b656b56bb208c3ad67fc57);
+                var html_dceb0dacd50225b0c9932fe501be02e5 = $(`<div id="html_dceb0dacd50225b0c9932fe501be02e5" style="width: 100.0%; height: 100.0%;">AFC West</div>`)[0];
+                popup_981d6323d6cea278e6cb8226251fa9b0.setContent(html_dceb0dacd50225b0c9932fe501be02e5);
             
         
 
-        marker_f42a31914424beadc64b3f01241c1570.bindPopup(popup_598f030c6e883b6f5156a7a1736aa2a1)
+        marker_9a91f30c75c54c8c7b0cb5538060e349.bindPopup(popup_981d6323d6cea278e6cb8226251fa9b0)
         ;
 
         
     
     
-            marker_f42a31914424beadc64b3f01241c1570.bindTooltip(
+            marker_9a91f30c75c54c8c7b0cb5538060e349.bindTooltip(
                 `<div>
                      Denver Broncos
                  </div>`,
@@ -909,18 +1122,35 @@
             );
         
     
-                marker_f42a31914424beadc64b3f01241c1570.setIcon(custom_icon_caecd9c664ed041fe759de2833f56081);
+                marker_9a91f30c75c54c8c7b0cb5538060e349.setIcon(custom_icon_5b5c7eaa9046ba333ed3f9676624c92f);
             
     
-            var circle_marker_54f672188872a9a36b5ead405cb78bf4 = L.circleMarker(
-                [39.048889, -94.483889],
+            var circle_marker_86bc153bd82d88bcc21641ea1bb52d1d = L.circleMarker(
+                [39.7439, -105.0201],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_54f672188872a9a36b5ead405cb78bf4.bindTooltip(
+        var popup_afb1ba3dd26920548c2c1c95e31e781d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86a32523f70f7a03440989bd0525ce89 = $(`<div id="html_86a32523f70f7a03440989bd0525ce89" style="width: 100.0%; height: 100.0%;">Denver Broncos'  Empower Field at Mile High</div>`)[0];
+                popup_afb1ba3dd26920548c2c1c95e31e781d.setContent(html_86a32523f70f7a03440989bd0525ce89);
+            
+        
+
+        circle_marker_86bc153bd82d88bcc21641ea1bb52d1d.bindPopup(popup_afb1ba3dd26920548c2c1c95e31e781d)
+        ;
+
+        
+    
+    
+            circle_marker_86bc153bd82d88bcc21641ea1bb52d1d.bindTooltip(
                 `<div>
-                     Original location: Kansas City Chiefs
+                     Empower Field at Mile High
                  </div>`,
                 {
   "sticky": true,
@@ -928,40 +1158,40 @@
             );
         
     
-            var marker_45e998169fd193703185f6870714f390 = L.marker(
+            var marker_9f7dd9a07c9e1e97eb08d36fc05f2cb4 = L.marker(
                 [39.048889, -94.483889],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_7e0c27be9eb94e0295de515ff273e93a = L.icon({
+        var custom_icon_6a4069dc268cb9092a846617c1759b04 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/KC",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_45e998169fd193703185f6870714f390.setIcon(custom_icon_7e0c27be9eb94e0295de515ff273e93a);
+        marker_9f7dd9a07c9e1e97eb08d36fc05f2cb4.setIcon(custom_icon_6a4069dc268cb9092a846617c1759b04);
         
     
-        var popup_0e0f58f361cd7d3685328b8ab3df9db5 = L.popup({
+        var popup_28bd03bfce3243e69ce5cf23183136a8 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9665feab046979dfed0479a5cb118fb8 = $(`<div id="html_9665feab046979dfed0479a5cb118fb8" style="width: 100.0%; height: 100.0%;"><b>Kansas City Chiefs</b><br>West</div>`)[0];
-                popup_0e0f58f361cd7d3685328b8ab3df9db5.setContent(html_9665feab046979dfed0479a5cb118fb8);
+                var html_6188338ae70952a060fa7f52ceaffa99 = $(`<div id="html_6188338ae70952a060fa7f52ceaffa99" style="width: 100.0%; height: 100.0%;">AFC West</div>`)[0];
+                popup_28bd03bfce3243e69ce5cf23183136a8.setContent(html_6188338ae70952a060fa7f52ceaffa99);
             
         
 
-        marker_45e998169fd193703185f6870714f390.bindPopup(popup_0e0f58f361cd7d3685328b8ab3df9db5)
+        marker_9f7dd9a07c9e1e97eb08d36fc05f2cb4.bindPopup(popup_28bd03bfce3243e69ce5cf23183136a8)
         ;
 
         
     
     
-            marker_45e998169fd193703185f6870714f390.bindTooltip(
+            marker_9f7dd9a07c9e1e97eb08d36fc05f2cb4.bindTooltip(
                 `<div>
                      Kansas City Chiefs
                  </div>`,
@@ -971,18 +1201,35 @@
             );
         
     
-                marker_45e998169fd193703185f6870714f390.setIcon(custom_icon_7e0c27be9eb94e0295de515ff273e93a);
+                marker_9f7dd9a07c9e1e97eb08d36fc05f2cb4.setIcon(custom_icon_6a4069dc268cb9092a846617c1759b04);
             
     
-            var circle_marker_6f0d3382a1bd19e071f362631bbb8145 = L.circleMarker(
-                [36.090833, -115.183611],
+            var circle_marker_cd180cf1e18391f34860305bd06dec63 = L.circleMarker(
+                [39.048889, -94.483889],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_6f0d3382a1bd19e071f362631bbb8145.bindTooltip(
+        var popup_355076ce96bc35433a1a17bbd245cee5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26116d328ee1300ce435e765fc978bae = $(`<div id="html_26116d328ee1300ce435e765fc978bae" style="width: 100.0%; height: 100.0%;">Kansas City Chiefs'  GEHA Field at Arrowhead Stadium</div>`)[0];
+                popup_355076ce96bc35433a1a17bbd245cee5.setContent(html_26116d328ee1300ce435e765fc978bae);
+            
+        
+
+        circle_marker_cd180cf1e18391f34860305bd06dec63.bindPopup(popup_355076ce96bc35433a1a17bbd245cee5)
+        ;
+
+        
+    
+    
+            circle_marker_cd180cf1e18391f34860305bd06dec63.bindTooltip(
                 `<div>
-                     Original location: Las Vegas Raiders
+                     GEHA Field at Arrowhead Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -990,40 +1237,40 @@
             );
         
     
-            var marker_8cf86dd276d6ead57c485ba56c243de3 = L.marker(
+            var marker_61c0d64c519cde9b9532743cedf7ca92 = L.marker(
                 [36.090833, -115.183611],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_2d76508059b279ac2bf3ec93de7ad8e7 = L.icon({
+        var custom_icon_8c303a8e1fe687586096c391d99a6eb7 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LV",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_8cf86dd276d6ead57c485ba56c243de3.setIcon(custom_icon_2d76508059b279ac2bf3ec93de7ad8e7);
+        marker_61c0d64c519cde9b9532743cedf7ca92.setIcon(custom_icon_8c303a8e1fe687586096c391d99a6eb7);
         
     
-        var popup_f865472aa99e8b461e78c8037e51bade = L.popup({
+        var popup_3a5df54394d89601a30c920cd284b918 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2c7cb723f3b22617774e38754ce2edcd = $(`<div id="html_2c7cb723f3b22617774e38754ce2edcd" style="width: 100.0%; height: 100.0%;"><b>Las Vegas Raiders</b><br>West</div>`)[0];
-                popup_f865472aa99e8b461e78c8037e51bade.setContent(html_2c7cb723f3b22617774e38754ce2edcd);
+                var html_ee28ac8509405f933f70c0f252b6e412 = $(`<div id="html_ee28ac8509405f933f70c0f252b6e412" style="width: 100.0%; height: 100.0%;">AFC West</div>`)[0];
+                popup_3a5df54394d89601a30c920cd284b918.setContent(html_ee28ac8509405f933f70c0f252b6e412);
             
         
 
-        marker_8cf86dd276d6ead57c485ba56c243de3.bindPopup(popup_f865472aa99e8b461e78c8037e51bade)
+        marker_61c0d64c519cde9b9532743cedf7ca92.bindPopup(popup_3a5df54394d89601a30c920cd284b918)
         ;
 
         
     
     
-            marker_8cf86dd276d6ead57c485ba56c243de3.bindTooltip(
+            marker_61c0d64c519cde9b9532743cedf7ca92.bindTooltip(
                 `<div>
                      Las Vegas Raiders
                  </div>`,
@@ -1033,18 +1280,35 @@
             );
         
     
-                marker_8cf86dd276d6ead57c485ba56c243de3.setIcon(custom_icon_2d76508059b279ac2bf3ec93de7ad8e7);
+                marker_61c0d64c519cde9b9532743cedf7ca92.setIcon(custom_icon_8c303a8e1fe687586096c391d99a6eb7);
             
     
-            var circle_marker_b6713d078d4f84f4c33c1692f4ce1355 = L.circleMarker(
-                [33.95345, -118.3392],
+            var circle_marker_823bc01c641b8c0cab399053ed17ca4d = L.circleMarker(
+                [36.090833, -115.183611],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_b6713d078d4f84f4c33c1692f4ce1355.bindTooltip(
+        var popup_48f93a56faf2613205de6919da235163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_639d55be77a655c4cf7b3da72750261d = $(`<div id="html_639d55be77a655c4cf7b3da72750261d" style="width: 100.0%; height: 100.0%;">Las Vegas Raiders'  Allegiant Stadium</div>`)[0];
+                popup_48f93a56faf2613205de6919da235163.setContent(html_639d55be77a655c4cf7b3da72750261d);
+            
+        
+
+        circle_marker_823bc01c641b8c0cab399053ed17ca4d.bindPopup(popup_48f93a56faf2613205de6919da235163)
+        ;
+
+        
+    
+    
+            circle_marker_823bc01c641b8c0cab399053ed17ca4d.bindTooltip(
                 `<div>
-                     Original location: Los Angeles Chargers
+                     Allegiant Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1052,40 +1316,40 @@
             );
         
     
-            var marker_3c612942fcbcedddb952f6713f3483a4 = L.marker(
+            var marker_fbf9c6a1a4fe6d53716b4f65f9c90776 = L.marker(
                 [34.42642297297297, -117.35159119914532],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_ab613d98a83b2d6f4765f9d809360005 = L.icon({
+        var custom_icon_d1e231d4a856f595c6f2ee191a4e9e83 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LAC",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_3c612942fcbcedddb952f6713f3483a4.setIcon(custom_icon_ab613d98a83b2d6f4765f9d809360005);
+        marker_fbf9c6a1a4fe6d53716b4f65f9c90776.setIcon(custom_icon_d1e231d4a856f595c6f2ee191a4e9e83);
         
     
-        var popup_8c937c638fdbb74ee8e5a33528274eb3 = L.popup({
+        var popup_335331ecaf28ecebd2403b406e92424f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9676bdbc5895583ce2fd5fa72c8fe88e = $(`<div id="html_9676bdbc5895583ce2fd5fa72c8fe88e" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Chargers</b><br>West</div>`)[0];
-                popup_8c937c638fdbb74ee8e5a33528274eb3.setContent(html_9676bdbc5895583ce2fd5fa72c8fe88e);
+                var html_97e7966e73e0814ab9c91047499aa066 = $(`<div id="html_97e7966e73e0814ab9c91047499aa066" style="width: 100.0%; height: 100.0%;">AFC West</div>`)[0];
+                popup_335331ecaf28ecebd2403b406e92424f.setContent(html_97e7966e73e0814ab9c91047499aa066);
             
         
 
-        marker_3c612942fcbcedddb952f6713f3483a4.bindPopup(popup_8c937c638fdbb74ee8e5a33528274eb3)
+        marker_fbf9c6a1a4fe6d53716b4f65f9c90776.bindPopup(popup_335331ecaf28ecebd2403b406e92424f)
         ;
 
         
     
     
-            marker_3c612942fcbcedddb952f6713f3483a4.bindTooltip(
+            marker_fbf9c6a1a4fe6d53716b4f65f9c90776.bindTooltip(
                 `<div>
                      Los Angeles Chargers
                  </div>`,
@@ -1095,18 +1359,35 @@
             );
         
     
-                marker_3c612942fcbcedddb952f6713f3483a4.setIcon(custom_icon_ab613d98a83b2d6f4765f9d809360005);
+                marker_fbf9c6a1a4fe6d53716b4f65f9c90776.setIcon(custom_icon_d1e231d4a856f595c6f2ee191a4e9e83);
             
     
-            var circle_marker_63660432eeedfac1dd754a8c8e671e6a = L.circleMarker(
-                [32.747778, -97.092778],
+            var circle_marker_5ce188a3d683176894697847a535a63b = L.circleMarker(
+                [33.95345, -118.3392],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_63660432eeedfac1dd754a8c8e671e6a.bindTooltip(
+        var popup_bd75637f0d1c6bb8105d8fc6b1c6547c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43bc569bd07ecf03b1e9912e64a9ee4b = $(`<div id="html_43bc569bd07ecf03b1e9912e64a9ee4b" style="width: 100.0%; height: 100.0%;">Los Angeles Chargers'  SoFi Stadium</div>`)[0];
+                popup_bd75637f0d1c6bb8105d8fc6b1c6547c.setContent(html_43bc569bd07ecf03b1e9912e64a9ee4b);
+            
+        
+
+        circle_marker_5ce188a3d683176894697847a535a63b.bindPopup(popup_bd75637f0d1c6bb8105d8fc6b1c6547c)
+        ;
+
+        
+    
+    
+            circle_marker_5ce188a3d683176894697847a535a63b.bindTooltip(
                 `<div>
-                     Original location: Dallas Cowboys
+                     SoFi Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1114,40 +1395,40 @@
             );
         
     
-            var marker_ca1a4ae552e13d98df8310d57b43fba1 = L.marker(
+            var marker_18a592a2e099017744c155edc611a6c1 = L.marker(
                 [32.747778, -97.092778],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_736e80a4a26deb97206ecbf5a65d00b3 = L.icon({
+        var custom_icon_15b49c0d3b2914431bc048f2c0a8abf6 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DAL",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_ca1a4ae552e13d98df8310d57b43fba1.setIcon(custom_icon_736e80a4a26deb97206ecbf5a65d00b3);
+        marker_18a592a2e099017744c155edc611a6c1.setIcon(custom_icon_15b49c0d3b2914431bc048f2c0a8abf6);
         
     
-        var popup_3e6c49de1d427de5b97ebfe7533d4aa1 = L.popup({
+        var popup_57b7474d26971f2aac9675e404e771f6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_06c4f1cdb663b3dd4b652455e81fcf93 = $(`<div id="html_06c4f1cdb663b3dd4b652455e81fcf93" style="width: 100.0%; height: 100.0%;"><b>Dallas Cowboys</b><br>East</div>`)[0];
-                popup_3e6c49de1d427de5b97ebfe7533d4aa1.setContent(html_06c4f1cdb663b3dd4b652455e81fcf93);
+                var html_88d9c113f90c64446a23ed89838f36c3 = $(`<div id="html_88d9c113f90c64446a23ed89838f36c3" style="width: 100.0%; height: 100.0%;">NFC East</div>`)[0];
+                popup_57b7474d26971f2aac9675e404e771f6.setContent(html_88d9c113f90c64446a23ed89838f36c3);
             
         
 
-        marker_ca1a4ae552e13d98df8310d57b43fba1.bindPopup(popup_3e6c49de1d427de5b97ebfe7533d4aa1)
+        marker_18a592a2e099017744c155edc611a6c1.bindPopup(popup_57b7474d26971f2aac9675e404e771f6)
         ;
 
         
     
     
-            marker_ca1a4ae552e13d98df8310d57b43fba1.bindTooltip(
+            marker_18a592a2e099017744c155edc611a6c1.bindTooltip(
                 `<div>
                      Dallas Cowboys
                  </div>`,
@@ -1157,18 +1438,35 @@
             );
         
     
-                marker_ca1a4ae552e13d98df8310d57b43fba1.setIcon(custom_icon_736e80a4a26deb97206ecbf5a65d00b3);
+                marker_18a592a2e099017744c155edc611a6c1.setIcon(custom_icon_15b49c0d3b2914431bc048f2c0a8abf6);
             
     
-            var circle_marker_e054aea25a70381c5f4346092677419f = L.circleMarker(
-                [40.813528, -74.074361],
+            var circle_marker_0c9e2548943cc3450335dc6b04f3b3cf = L.circleMarker(
+                [32.747778, -97.092778],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_e054aea25a70381c5f4346092677419f.bindTooltip(
+        var popup_0d4da04d49c9c34bf62969df6de115b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_284bdc6cc557bc7684190fc4a1a2e2d2 = $(`<div id="html_284bdc6cc557bc7684190fc4a1a2e2d2" style="width: 100.0%; height: 100.0%;">Dallas Cowboys'  AT&T Stadium</div>`)[0];
+                popup_0d4da04d49c9c34bf62969df6de115b5.setContent(html_284bdc6cc557bc7684190fc4a1a2e2d2);
+            
+        
+
+        circle_marker_0c9e2548943cc3450335dc6b04f3b3cf.bindPopup(popup_0d4da04d49c9c34bf62969df6de115b5)
+        ;
+
+        
+    
+    
+            circle_marker_0c9e2548943cc3450335dc6b04f3b3cf.bindTooltip(
                 `<div>
-                     Original location: New York Giants
+                     AT&T Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1176,40 +1474,40 @@
             );
         
     
-            var marker_f2d0f3caa1272e9a18800453dac35fc7 = L.marker(
+            var marker_58907f3b055d0ebde418554d251ef99b = L.marker(
                 [40.34055502702702, -72.99194939277487],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_45fa8cb81cda2529d7fc27d1a42ca988 = L.icon({
+        var custom_icon_f4494d13d4f67847909bb72b58798ad7 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NYG",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_f2d0f3caa1272e9a18800453dac35fc7.setIcon(custom_icon_45fa8cb81cda2529d7fc27d1a42ca988);
+        marker_58907f3b055d0ebde418554d251ef99b.setIcon(custom_icon_f4494d13d4f67847909bb72b58798ad7);
         
     
-        var popup_94611b0bd4e6b83034c9471106fd69cd = L.popup({
+        var popup_8a57cf23298ff6592f4190d01d6cae3b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5be1619cdad615096e80104d50d4a2d9 = $(`<div id="html_5be1619cdad615096e80104d50d4a2d9" style="width: 100.0%; height: 100.0%;"><b>New York Giants</b><br>East</div>`)[0];
-                popup_94611b0bd4e6b83034c9471106fd69cd.setContent(html_5be1619cdad615096e80104d50d4a2d9);
+                var html_a391bf89b6e3d8f97a9a68e8ee060669 = $(`<div id="html_a391bf89b6e3d8f97a9a68e8ee060669" style="width: 100.0%; height: 100.0%;">NFC East</div>`)[0];
+                popup_8a57cf23298ff6592f4190d01d6cae3b.setContent(html_a391bf89b6e3d8f97a9a68e8ee060669);
             
         
 
-        marker_f2d0f3caa1272e9a18800453dac35fc7.bindPopup(popup_94611b0bd4e6b83034c9471106fd69cd)
+        marker_58907f3b055d0ebde418554d251ef99b.bindPopup(popup_8a57cf23298ff6592f4190d01d6cae3b)
         ;
 
         
     
     
-            marker_f2d0f3caa1272e9a18800453dac35fc7.bindTooltip(
+            marker_58907f3b055d0ebde418554d251ef99b.bindTooltip(
                 `<div>
                      New York Giants
                  </div>`,
@@ -1219,18 +1517,35 @@
             );
         
     
-                marker_f2d0f3caa1272e9a18800453dac35fc7.setIcon(custom_icon_45fa8cb81cda2529d7fc27d1a42ca988);
+                marker_58907f3b055d0ebde418554d251ef99b.setIcon(custom_icon_f4494d13d4f67847909bb72b58798ad7);
             
     
-            var circle_marker_12788129f3025d5169a8ef71e07d53a2 = L.circleMarker(
-                [39.900833, -75.1675],
+            var circle_marker_0f53921e3aa28d41fbe9264afdb8f0db = L.circleMarker(
+                [40.813528, -74.074361],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_12788129f3025d5169a8ef71e07d53a2.bindTooltip(
+        var popup_d76a5ec9cb4a4fd53efa4b314562b568 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06d209abf07a66dc65fee8754bd43146 = $(`<div id="html_06d209abf07a66dc65fee8754bd43146" style="width: 100.0%; height: 100.0%;">Jets AND Giants'  MetLife Stadium</div>`)[0];
+                popup_d76a5ec9cb4a4fd53efa4b314562b568.setContent(html_06d209abf07a66dc65fee8754bd43146);
+            
+        
+
+        circle_marker_0f53921e3aa28d41fbe9264afdb8f0db.bindPopup(popup_d76a5ec9cb4a4fd53efa4b314562b568)
+        ;
+
+        
+    
+    
+            circle_marker_0f53921e3aa28d41fbe9264afdb8f0db.bindTooltip(
                 `<div>
-                     Original location: Philadelphia Eagles
+                     Jets AND Giants Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1238,40 +1553,40 @@
             );
         
     
-            var marker_a2e361692495c06a32ea464f0877db5f = L.marker(
+            var marker_66befc9631eb7bb2373abf02f57921d3 = L.marker(
                 [39.900833, -75.1675],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_ff17d14d015ef0f7d0c2504142d7f21f = L.icon({
+        var custom_icon_58308b03569a2498531563c1bebb8cc8 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/PHI",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_a2e361692495c06a32ea464f0877db5f.setIcon(custom_icon_ff17d14d015ef0f7d0c2504142d7f21f);
+        marker_66befc9631eb7bb2373abf02f57921d3.setIcon(custom_icon_58308b03569a2498531563c1bebb8cc8);
         
     
-        var popup_03a462cfea8d8458d1bdf06c35c44cf7 = L.popup({
+        var popup_7a7de78c0761b49e6666d42e8d44ae69 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d25af8f4327c63030d887c14b1ce831f = $(`<div id="html_d25af8f4327c63030d887c14b1ce831f" style="width: 100.0%; height: 100.0%;"><b>Philadelphia Eagles</b><br>East</div>`)[0];
-                popup_03a462cfea8d8458d1bdf06c35c44cf7.setContent(html_d25af8f4327c63030d887c14b1ce831f);
+                var html_a6ae34a62082bb9918adf85e40ab8916 = $(`<div id="html_a6ae34a62082bb9918adf85e40ab8916" style="width: 100.0%; height: 100.0%;">NFC East</div>`)[0];
+                popup_7a7de78c0761b49e6666d42e8d44ae69.setContent(html_a6ae34a62082bb9918adf85e40ab8916);
             
         
 
-        marker_a2e361692495c06a32ea464f0877db5f.bindPopup(popup_03a462cfea8d8458d1bdf06c35c44cf7)
+        marker_66befc9631eb7bb2373abf02f57921d3.bindPopup(popup_7a7de78c0761b49e6666d42e8d44ae69)
         ;
 
         
     
     
-            marker_a2e361692495c06a32ea464f0877db5f.bindTooltip(
+            marker_66befc9631eb7bb2373abf02f57921d3.bindTooltip(
                 `<div>
                      Philadelphia Eagles
                  </div>`,
@@ -1281,18 +1596,35 @@
             );
         
     
-                marker_a2e361692495c06a32ea464f0877db5f.setIcon(custom_icon_ff17d14d015ef0f7d0c2504142d7f21f);
+                marker_66befc9631eb7bb2373abf02f57921d3.setIcon(custom_icon_58308b03569a2498531563c1bebb8cc8);
             
     
-            var circle_marker_5df7ce4ba50603b2f8eb644ff8db3f71 = L.circleMarker(
-                [38.907778, -76.864444],
+            var circle_marker_9b792229f46ad7232407a21fc93b35df = L.circleMarker(
+                [39.900833, -75.1675],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_5df7ce4ba50603b2f8eb644ff8db3f71.bindTooltip(
+        var popup_3683cd473491403616b0c18045e2a022 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7693fa90308ccaefb6e708136f05f586 = $(`<div id="html_7693fa90308ccaefb6e708136f05f586" style="width: 100.0%; height: 100.0%;">Philadelphia Eagles'  Lincoln Financial Field</div>`)[0];
+                popup_3683cd473491403616b0c18045e2a022.setContent(html_7693fa90308ccaefb6e708136f05f586);
+            
+        
+
+        circle_marker_9b792229f46ad7232407a21fc93b35df.bindPopup(popup_3683cd473491403616b0c18045e2a022)
+        ;
+
+        
+    
+    
+            circle_marker_9b792229f46ad7232407a21fc93b35df.bindTooltip(
                 `<div>
-                     Original location: Washington Commanders
+                     Lincoln Financial Field
                  </div>`,
                 {
   "sticky": true,
@@ -1300,40 +1632,40 @@
             );
         
     
-            var marker_ef7cb0d80f6231a45b15101be4eb6b72 = L.marker(
+            var marker_0bf93e016fa18fc03f2b6f36636fb52d = L.marker(
                 [38.37070512824148, -75.66271521889308],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_0a52ab450ae6f8530d53c83d442597b0 = L.icon({
+        var custom_icon_321ff9926a26d0c5ffa139cf469f896e = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/WAS",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_ef7cb0d80f6231a45b15101be4eb6b72.setIcon(custom_icon_0a52ab450ae6f8530d53c83d442597b0);
+        marker_0bf93e016fa18fc03f2b6f36636fb52d.setIcon(custom_icon_321ff9926a26d0c5ffa139cf469f896e);
         
     
-        var popup_c190a9379b5a6c401f02f27fef70435e = L.popup({
+        var popup_73cf7c380149e72527dc3b73cfef52f7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d64fcce353d22adb32d62449bc044324 = $(`<div id="html_d64fcce353d22adb32d62449bc044324" style="width: 100.0%; height: 100.0%;"><b>Washington Commanders</b><br>East</div>`)[0];
-                popup_c190a9379b5a6c401f02f27fef70435e.setContent(html_d64fcce353d22adb32d62449bc044324);
+                var html_74ce4ae53283f559b17640a331e0f374 = $(`<div id="html_74ce4ae53283f559b17640a331e0f374" style="width: 100.0%; height: 100.0%;">NFC East</div>`)[0];
+                popup_73cf7c380149e72527dc3b73cfef52f7.setContent(html_74ce4ae53283f559b17640a331e0f374);
             
         
 
-        marker_ef7cb0d80f6231a45b15101be4eb6b72.bindPopup(popup_c190a9379b5a6c401f02f27fef70435e)
+        marker_0bf93e016fa18fc03f2b6f36636fb52d.bindPopup(popup_73cf7c380149e72527dc3b73cfef52f7)
         ;
 
         
     
     
-            marker_ef7cb0d80f6231a45b15101be4eb6b72.bindTooltip(
+            marker_0bf93e016fa18fc03f2b6f36636fb52d.bindTooltip(
                 `<div>
                      Washington Commanders
                  </div>`,
@@ -1343,18 +1675,35 @@
             );
         
     
-                marker_ef7cb0d80f6231a45b15101be4eb6b72.setIcon(custom_icon_0a52ab450ae6f8530d53c83d442597b0);
+                marker_0bf93e016fa18fc03f2b6f36636fb52d.setIcon(custom_icon_321ff9926a26d0c5ffa139cf469f896e);
             
     
-            var circle_marker_ae99eed1302f259b2673440934449972 = L.circleMarker(
-                [41.8623, -87.6167],
+            var circle_marker_493fb7cda211c1459c54a0525d01369d = L.circleMarker(
+                [38.907778, -76.864444],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_ae99eed1302f259b2673440934449972.bindTooltip(
+        var popup_c285463e91fd1d7fc75b5e926c21b121 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb67eaabf7c98274fb34f74699eedacb = $(`<div id="html_bb67eaabf7c98274fb34f74699eedacb" style="width: 100.0%; height: 100.0%;">Washington Commanders'  Northwest Stadium</div>`)[0];
+                popup_c285463e91fd1d7fc75b5e926c21b121.setContent(html_bb67eaabf7c98274fb34f74699eedacb);
+            
+        
+
+        circle_marker_493fb7cda211c1459c54a0525d01369d.bindPopup(popup_c285463e91fd1d7fc75b5e926c21b121)
+        ;
+
+        
+    
+    
+            circle_marker_493fb7cda211c1459c54a0525d01369d.bindTooltip(
                 `<div>
-                     Original location: Chicago Bears
+                     Northwest Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1362,40 +1711,40 @@
             );
         
     
-            var marker_bc6ff7caad38c857fedbce0e06f552cc = L.marker(
+            var marker_2e31456d051ea26138d87b03cd6cca2c = L.marker(
                 [41.8623, -87.6167],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_272f51aac9ce337c8dd09675758adfef = L.icon({
+        var custom_icon_1bc0ad75078881f548b5b64808bcc3ce = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CHI",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_bc6ff7caad38c857fedbce0e06f552cc.setIcon(custom_icon_272f51aac9ce337c8dd09675758adfef);
+        marker_2e31456d051ea26138d87b03cd6cca2c.setIcon(custom_icon_1bc0ad75078881f548b5b64808bcc3ce);
         
     
-        var popup_2a1d2bc271d05f38e3733b340121f9be = L.popup({
+        var popup_52b91e0b4aba8a9dc0cdfd2daabd796a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_cb1e4ad049639490342c8245583b4658 = $(`<div id="html_cb1e4ad049639490342c8245583b4658" style="width: 100.0%; height: 100.0%;"><b>Chicago Bears</b><br>North</div>`)[0];
-                popup_2a1d2bc271d05f38e3733b340121f9be.setContent(html_cb1e4ad049639490342c8245583b4658);
+                var html_478cd67772a8acc8aedb8338a74132f4 = $(`<div id="html_478cd67772a8acc8aedb8338a74132f4" style="width: 100.0%; height: 100.0%;">NFC North</div>`)[0];
+                popup_52b91e0b4aba8a9dc0cdfd2daabd796a.setContent(html_478cd67772a8acc8aedb8338a74132f4);
             
         
 
-        marker_bc6ff7caad38c857fedbce0e06f552cc.bindPopup(popup_2a1d2bc271d05f38e3733b340121f9be)
+        marker_2e31456d051ea26138d87b03cd6cca2c.bindPopup(popup_52b91e0b4aba8a9dc0cdfd2daabd796a)
         ;
 
         
     
     
-            marker_bc6ff7caad38c857fedbce0e06f552cc.bindTooltip(
+            marker_2e31456d051ea26138d87b03cd6cca2c.bindTooltip(
                 `<div>
                      Chicago Bears
                  </div>`,
@@ -1405,18 +1754,35 @@
             );
         
     
-                marker_bc6ff7caad38c857fedbce0e06f552cc.setIcon(custom_icon_272f51aac9ce337c8dd09675758adfef);
+                marker_2e31456d051ea26138d87b03cd6cca2c.setIcon(custom_icon_1bc0ad75078881f548b5b64808bcc3ce);
             
     
-            var circle_marker_eb13fbdca72e3e378c78e44d9923d9f3 = L.circleMarker(
-                [42.34, -83.045556],
+            var circle_marker_2f7e2c655dc485614232243cf447a935 = L.circleMarker(
+                [41.8623, -87.6167],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_eb13fbdca72e3e378c78e44d9923d9f3.bindTooltip(
+        var popup_98d17adf888a2c3cecc5d2ce830395e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_674c3c97aede16289215300dd14b6e41 = $(`<div id="html_674c3c97aede16289215300dd14b6e41" style="width: 100.0%; height: 100.0%;">Chicago Bears'  Soldier Field</div>`)[0];
+                popup_98d17adf888a2c3cecc5d2ce830395e9.setContent(html_674c3c97aede16289215300dd14b6e41);
+            
+        
+
+        circle_marker_2f7e2c655dc485614232243cf447a935.bindPopup(popup_98d17adf888a2c3cecc5d2ce830395e9)
+        ;
+
+        
+    
+    
+            circle_marker_2f7e2c655dc485614232243cf447a935.bindTooltip(
                 `<div>
-                     Original location: Detroit Lions
+                     Soldier Field
                  </div>`,
                 {
   "sticky": true,
@@ -1424,40 +1790,40 @@
             );
         
     
-            var marker_c87ee079e8c4a7cf6af69c4a353a34a6 = L.marker(
+            var marker_88cace50f0fa3e5a86343f55057dcd01 = L.marker(
                 [42.34, -83.045556],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_4529787c7aad6c91d004ff80a359366b = L.icon({
+        var custom_icon_4fc21a217c2255078081df9897da39b8 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DET",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_c87ee079e8c4a7cf6af69c4a353a34a6.setIcon(custom_icon_4529787c7aad6c91d004ff80a359366b);
+        marker_88cace50f0fa3e5a86343f55057dcd01.setIcon(custom_icon_4fc21a217c2255078081df9897da39b8);
         
     
-        var popup_ee140cf2cb2ba908afddce69c17b53e0 = L.popup({
+        var popup_17c8eb208a2cb4109037a46d288ad867 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8b89404b467649f8a83800449372dcf7 = $(`<div id="html_8b89404b467649f8a83800449372dcf7" style="width: 100.0%; height: 100.0%;"><b>Detroit Lions</b><br>North</div>`)[0];
-                popup_ee140cf2cb2ba908afddce69c17b53e0.setContent(html_8b89404b467649f8a83800449372dcf7);
+                var html_7dcf485e6bd454134e70dc9a446e73aa = $(`<div id="html_7dcf485e6bd454134e70dc9a446e73aa" style="width: 100.0%; height: 100.0%;">NFC North</div>`)[0];
+                popup_17c8eb208a2cb4109037a46d288ad867.setContent(html_7dcf485e6bd454134e70dc9a446e73aa);
             
         
 
-        marker_c87ee079e8c4a7cf6af69c4a353a34a6.bindPopup(popup_ee140cf2cb2ba908afddce69c17b53e0)
+        marker_88cace50f0fa3e5a86343f55057dcd01.bindPopup(popup_17c8eb208a2cb4109037a46d288ad867)
         ;
 
         
     
     
-            marker_c87ee079e8c4a7cf6af69c4a353a34a6.bindTooltip(
+            marker_88cace50f0fa3e5a86343f55057dcd01.bindTooltip(
                 `<div>
                      Detroit Lions
                  </div>`,
@@ -1467,18 +1833,35 @@
             );
         
     
-                marker_c87ee079e8c4a7cf6af69c4a353a34a6.setIcon(custom_icon_4529787c7aad6c91d004ff80a359366b);
+                marker_88cace50f0fa3e5a86343f55057dcd01.setIcon(custom_icon_4fc21a217c2255078081df9897da39b8);
             
     
-            var circle_marker_e48747b1c372afd0933b259cab24f003 = L.circleMarker(
-                [44.501389, -88.062222],
+            var circle_marker_1b2afb246cc61f168227574fef4ac251 = L.circleMarker(
+                [42.34, -83.045556],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_e48747b1c372afd0933b259cab24f003.bindTooltip(
+        var popup_c1001f698b83a2dc68151d8f01e640dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8151156c241b1c545a09d27ce9c030cf = $(`<div id="html_8151156c241b1c545a09d27ce9c030cf" style="width: 100.0%; height: 100.0%;">Detroit Lions'  Ford Field</div>`)[0];
+                popup_c1001f698b83a2dc68151d8f01e640dc.setContent(html_8151156c241b1c545a09d27ce9c030cf);
+            
+        
+
+        circle_marker_1b2afb246cc61f168227574fef4ac251.bindPopup(popup_c1001f698b83a2dc68151d8f01e640dc)
+        ;
+
+        
+    
+    
+            circle_marker_1b2afb246cc61f168227574fef4ac251.bindTooltip(
                 `<div>
-                     Original location: Green Bay Packers
+                     Ford Field
                  </div>`,
                 {
   "sticky": true,
@@ -1486,40 +1869,40 @@
             );
         
     
-            var marker_85986a7691d2bbe4edaf05b87d1ad83a = L.marker(
+            var marker_79c5998eb4fa8d7d8f28333ed2efd9ce = L.marker(
                 [44.501389, -88.062222],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_073a15dd6d85fd49925263d0d1a1263f = L.icon({
+        var custom_icon_5b6fde097915d850791ddb7c84bba37d = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/GB",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_85986a7691d2bbe4edaf05b87d1ad83a.setIcon(custom_icon_073a15dd6d85fd49925263d0d1a1263f);
+        marker_79c5998eb4fa8d7d8f28333ed2efd9ce.setIcon(custom_icon_5b6fde097915d850791ddb7c84bba37d);
         
     
-        var popup_59cacb360aff7a400c5cc19f01827d97 = L.popup({
+        var popup_6136e61841252690b08555275a2c408e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7cc9587e5fe43b91dda17742087a6deb = $(`<div id="html_7cc9587e5fe43b91dda17742087a6deb" style="width: 100.0%; height: 100.0%;"><b>Green Bay Packers</b><br>North</div>`)[0];
-                popup_59cacb360aff7a400c5cc19f01827d97.setContent(html_7cc9587e5fe43b91dda17742087a6deb);
+                var html_49c8b279b0a4134737c633b50e247edf = $(`<div id="html_49c8b279b0a4134737c633b50e247edf" style="width: 100.0%; height: 100.0%;">NFC North</div>`)[0];
+                popup_6136e61841252690b08555275a2c408e.setContent(html_49c8b279b0a4134737c633b50e247edf);
             
         
 
-        marker_85986a7691d2bbe4edaf05b87d1ad83a.bindPopup(popup_59cacb360aff7a400c5cc19f01827d97)
+        marker_79c5998eb4fa8d7d8f28333ed2efd9ce.bindPopup(popup_6136e61841252690b08555275a2c408e)
         ;
 
         
     
     
-            marker_85986a7691d2bbe4edaf05b87d1ad83a.bindTooltip(
+            marker_79c5998eb4fa8d7d8f28333ed2efd9ce.bindTooltip(
                 `<div>
                      Green Bay Packers
                  </div>`,
@@ -1529,18 +1912,35 @@
             );
         
     
-                marker_85986a7691d2bbe4edaf05b87d1ad83a.setIcon(custom_icon_073a15dd6d85fd49925263d0d1a1263f);
+                marker_79c5998eb4fa8d7d8f28333ed2efd9ce.setIcon(custom_icon_5b6fde097915d850791ddb7c84bba37d);
             
     
-            var circle_marker_1424c7940ab833d1a93f38d69b1b3a00 = L.circleMarker(
-                [44.974, -93.258],
+            var circle_marker_8ee1b27a99835f3fcc95544723b2291a = L.circleMarker(
+                [44.501389, -88.062222],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_1424c7940ab833d1a93f38d69b1b3a00.bindTooltip(
+        var popup_b715da4b63b3bfe24ae17136be4674a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d04a2fc4c86f8e0d44fdd7cb663037 = $(`<div id="html_85d04a2fc4c86f8e0d44fdd7cb663037" style="width: 100.0%; height: 100.0%;">Green Bay Packers'  Lambeau Field</div>`)[0];
+                popup_b715da4b63b3bfe24ae17136be4674a5.setContent(html_85d04a2fc4c86f8e0d44fdd7cb663037);
+            
+        
+
+        circle_marker_8ee1b27a99835f3fcc95544723b2291a.bindPopup(popup_b715da4b63b3bfe24ae17136be4674a5)
+        ;
+
+        
+    
+    
+            circle_marker_8ee1b27a99835f3fcc95544723b2291a.bindTooltip(
                 `<div>
-                     Original location: Minnesota Vikings
+                     Lambeau Field
                  </div>`,
                 {
   "sticky": true,
@@ -1548,40 +1948,40 @@
             );
         
     
-            var marker_3820ab15c4660709977f753b424696fb = L.marker(
+            var marker_82d3d0f5d2ecc5a0750d153cfdd3ceba = L.marker(
                 [44.974, -93.258],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_d2c8c9038a980afe9b923ba4253aa971 = L.icon({
+        var custom_icon_5172c28134092789d1d7c16a5ecdd62a = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/MIN",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_3820ab15c4660709977f753b424696fb.setIcon(custom_icon_d2c8c9038a980afe9b923ba4253aa971);
+        marker_82d3d0f5d2ecc5a0750d153cfdd3ceba.setIcon(custom_icon_5172c28134092789d1d7c16a5ecdd62a);
         
     
-        var popup_004c8fda7d9f9fcdd45af04e97b4d641 = L.popup({
+        var popup_d5dd2b89f90a2fd59172b0d4fc03d5c7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d81e7d60d1cd2af5fc27a2fa4c6e5a0a = $(`<div id="html_d81e7d60d1cd2af5fc27a2fa4c6e5a0a" style="width: 100.0%; height: 100.0%;"><b>Minnesota Vikings</b><br>North</div>`)[0];
-                popup_004c8fda7d9f9fcdd45af04e97b4d641.setContent(html_d81e7d60d1cd2af5fc27a2fa4c6e5a0a);
+                var html_c8b8b4636aae08f1ee81166d4549882d = $(`<div id="html_c8b8b4636aae08f1ee81166d4549882d" style="width: 100.0%; height: 100.0%;">NFC North</div>`)[0];
+                popup_d5dd2b89f90a2fd59172b0d4fc03d5c7.setContent(html_c8b8b4636aae08f1ee81166d4549882d);
             
         
 
-        marker_3820ab15c4660709977f753b424696fb.bindPopup(popup_004c8fda7d9f9fcdd45af04e97b4d641)
+        marker_82d3d0f5d2ecc5a0750d153cfdd3ceba.bindPopup(popup_d5dd2b89f90a2fd59172b0d4fc03d5c7)
         ;
 
         
     
     
-            marker_3820ab15c4660709977f753b424696fb.bindTooltip(
+            marker_82d3d0f5d2ecc5a0750d153cfdd3ceba.bindTooltip(
                 `<div>
                      Minnesota Vikings
                  </div>`,
@@ -1591,18 +1991,35 @@
             );
         
     
-                marker_3820ab15c4660709977f753b424696fb.setIcon(custom_icon_d2c8c9038a980afe9b923ba4253aa971);
+                marker_82d3d0f5d2ecc5a0750d153cfdd3ceba.setIcon(custom_icon_5172c28134092789d1d7c16a5ecdd62a);
             
     
-            var circle_marker_24875d18be4cbda3a9d27c57e5df85f5 = L.circleMarker(
-                [33.755556, -84.4],
+            var circle_marker_aa9fd0038a20bb2974b161207dfb6824 = L.circleMarker(
+                [44.974, -93.258],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_24875d18be4cbda3a9d27c57e5df85f5.bindTooltip(
+        var popup_386cb597917ac7c0e1b20c81cbb1544f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a325785e37953fab446230eab88da99c = $(`<div id="html_a325785e37953fab446230eab88da99c" style="width: 100.0%; height: 100.0%;">Minnesota Vikings'  U.S. Bank Stadium</div>`)[0];
+                popup_386cb597917ac7c0e1b20c81cbb1544f.setContent(html_a325785e37953fab446230eab88da99c);
+            
+        
+
+        circle_marker_aa9fd0038a20bb2974b161207dfb6824.bindPopup(popup_386cb597917ac7c0e1b20c81cbb1544f)
+        ;
+
+        
+    
+    
+            circle_marker_aa9fd0038a20bb2974b161207dfb6824.bindTooltip(
                 `<div>
-                     Original location: Atlanta Falcons
+                     U.S. Bank Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1610,40 +2027,40 @@
             );
         
     
-            var marker_f21c09da1314be47a41dde9fb5e4b5d0 = L.marker(
+            var marker_f8cf53536eefc9f34c5248e54ea8f4aa = L.marker(
                 [33.755556, -84.4],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_93a4917d9ae1afc920a6e71c34090c83 = L.icon({
+        var custom_icon_59a3a1422fdf6f87e65be1de9aafb86e = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/ATL",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_f21c09da1314be47a41dde9fb5e4b5d0.setIcon(custom_icon_93a4917d9ae1afc920a6e71c34090c83);
+        marker_f8cf53536eefc9f34c5248e54ea8f4aa.setIcon(custom_icon_59a3a1422fdf6f87e65be1de9aafb86e);
         
     
-        var popup_3f88afaeb776f584fcfdb4974d77c792 = L.popup({
+        var popup_e8b4b18f2dde552fa0510392f694c7ca = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_39f959a90b7e7c335fd1f9aaf2f5b5ca = $(`<div id="html_39f959a90b7e7c335fd1f9aaf2f5b5ca" style="width: 100.0%; height: 100.0%;"><b>Atlanta Falcons</b><br>South</div>`)[0];
-                popup_3f88afaeb776f584fcfdb4974d77c792.setContent(html_39f959a90b7e7c335fd1f9aaf2f5b5ca);
+                var html_d752e04f51ffc7650d45b058624698c1 = $(`<div id="html_d752e04f51ffc7650d45b058624698c1" style="width: 100.0%; height: 100.0%;">NFC South</div>`)[0];
+                popup_e8b4b18f2dde552fa0510392f694c7ca.setContent(html_d752e04f51ffc7650d45b058624698c1);
             
         
 
-        marker_f21c09da1314be47a41dde9fb5e4b5d0.bindPopup(popup_3f88afaeb776f584fcfdb4974d77c792)
+        marker_f8cf53536eefc9f34c5248e54ea8f4aa.bindPopup(popup_e8b4b18f2dde552fa0510392f694c7ca)
         ;
 
         
     
     
-            marker_f21c09da1314be47a41dde9fb5e4b5d0.bindTooltip(
+            marker_f8cf53536eefc9f34c5248e54ea8f4aa.bindTooltip(
                 `<div>
                      Atlanta Falcons
                  </div>`,
@@ -1653,18 +2070,35 @@
             );
         
     
-                marker_f21c09da1314be47a41dde9fb5e4b5d0.setIcon(custom_icon_93a4917d9ae1afc920a6e71c34090c83);
+                marker_f8cf53536eefc9f34c5248e54ea8f4aa.setIcon(custom_icon_59a3a1422fdf6f87e65be1de9aafb86e);
             
     
-            var circle_marker_9f5a22aa8da1236700fc500886328639 = L.circleMarker(
-                [35.225833, -80.852778],
+            var circle_marker_fe7211459cd5b2626a83d12c5d69a140 = L.circleMarker(
+                [33.755556, -84.4],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_9f5a22aa8da1236700fc500886328639.bindTooltip(
+        var popup_9805402e64b6a5592a77837fde7a3830 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3893142514b66bd3c8353994ca96ae0f = $(`<div id="html_3893142514b66bd3c8353994ca96ae0f" style="width: 100.0%; height: 100.0%;">Atlanta Falcons'  Mercedes-Benz Stadium</div>`)[0];
+                popup_9805402e64b6a5592a77837fde7a3830.setContent(html_3893142514b66bd3c8353994ca96ae0f);
+            
+        
+
+        circle_marker_fe7211459cd5b2626a83d12c5d69a140.bindPopup(popup_9805402e64b6a5592a77837fde7a3830)
+        ;
+
+        
+    
+    
+            circle_marker_fe7211459cd5b2626a83d12c5d69a140.bindTooltip(
                 `<div>
-                     Original location: Carolina Panthers
+                     Mercedes-Benz Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1672,40 +2106,40 @@
             );
         
     
-            var marker_fff66d733389179faf4d776810fb6d10 = L.marker(
+            var marker_86e86c2db646a9b6d009c9b2141707f6 = L.marker(
                 [35.225833, -80.852778],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_6244437b585f8be579bdab2598ffc6a5 = L.icon({
+        var custom_icon_c3c2f3d145cc8f2a3f6947781f693b80 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CAR",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_fff66d733389179faf4d776810fb6d10.setIcon(custom_icon_6244437b585f8be579bdab2598ffc6a5);
+        marker_86e86c2db646a9b6d009c9b2141707f6.setIcon(custom_icon_c3c2f3d145cc8f2a3f6947781f693b80);
         
     
-        var popup_ed134aee2ceb725d4bb5f522efdc902c = L.popup({
+        var popup_9f515461df1ef4f82ad97a9301da8069 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_c4d5b80ea2227b07bf53539994587f00 = $(`<div id="html_c4d5b80ea2227b07bf53539994587f00" style="width: 100.0%; height: 100.0%;"><b>Carolina Panthers</b><br>South</div>`)[0];
-                popup_ed134aee2ceb725d4bb5f522efdc902c.setContent(html_c4d5b80ea2227b07bf53539994587f00);
+                var html_6f58e4452ab2f7900990191ae1fdc1b0 = $(`<div id="html_6f58e4452ab2f7900990191ae1fdc1b0" style="width: 100.0%; height: 100.0%;">NFC South</div>`)[0];
+                popup_9f515461df1ef4f82ad97a9301da8069.setContent(html_6f58e4452ab2f7900990191ae1fdc1b0);
             
         
 
-        marker_fff66d733389179faf4d776810fb6d10.bindPopup(popup_ed134aee2ceb725d4bb5f522efdc902c)
+        marker_86e86c2db646a9b6d009c9b2141707f6.bindPopup(popup_9f515461df1ef4f82ad97a9301da8069)
         ;
 
         
     
     
-            marker_fff66d733389179faf4d776810fb6d10.bindTooltip(
+            marker_86e86c2db646a9b6d009c9b2141707f6.bindTooltip(
                 `<div>
                      Carolina Panthers
                  </div>`,
@@ -1715,18 +2149,35 @@
             );
         
     
-                marker_fff66d733389179faf4d776810fb6d10.setIcon(custom_icon_6244437b585f8be579bdab2598ffc6a5);
+                marker_86e86c2db646a9b6d009c9b2141707f6.setIcon(custom_icon_c3c2f3d145cc8f2a3f6947781f693b80);
             
     
-            var circle_marker_0528774925bba0c8fea309ed9f061322 = L.circleMarker(
-                [29.950833, -90.081111],
+            var circle_marker_315149db9843f589907c6d4f85d214c6 = L.circleMarker(
+                [35.225833, -80.852778],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_0528774925bba0c8fea309ed9f061322.bindTooltip(
+        var popup_66dfc098dbfde0bb48faf0afd8873c56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abc0a91c8e6df78ce1bcfa582fce4ab9 = $(`<div id="html_abc0a91c8e6df78ce1bcfa582fce4ab9" style="width: 100.0%; height: 100.0%;">Carolina Panthers'  Bank of America Stadium</div>`)[0];
+                popup_66dfc098dbfde0bb48faf0afd8873c56.setContent(html_abc0a91c8e6df78ce1bcfa582fce4ab9);
+            
+        
+
+        circle_marker_315149db9843f589907c6d4f85d214c6.bindPopup(popup_66dfc098dbfde0bb48faf0afd8873c56)
+        ;
+
+        
+    
+    
+            circle_marker_315149db9843f589907c6d4f85d214c6.bindTooltip(
                 `<div>
-                     Original location: New Orleans Saints
+                     Bank of America Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1734,40 +2185,40 @@
             );
         
     
-            var marker_5e87eae5a7e676fe8521d53492afe3f9 = L.marker(
+            var marker_31def3efd5f4c716d1dc5df7cc4ce546 = L.marker(
                 [29.950833, -90.081111],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_eec83f2828ba65b5f8a9bcb4425a615a = L.icon({
+        var custom_icon_b1d53235f448fe1fd52ecf4b7e4a396d = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NO",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_5e87eae5a7e676fe8521d53492afe3f9.setIcon(custom_icon_eec83f2828ba65b5f8a9bcb4425a615a);
+        marker_31def3efd5f4c716d1dc5df7cc4ce546.setIcon(custom_icon_b1d53235f448fe1fd52ecf4b7e4a396d);
         
     
-        var popup_cd3e91df8634ba5edb9804c758429ecb = L.popup({
+        var popup_8c646397d7ae322d1ca8903bf7918b37 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b90e93f31361ce6b9a44d006e328b6cf = $(`<div id="html_b90e93f31361ce6b9a44d006e328b6cf" style="width: 100.0%; height: 100.0%;"><b>New Orleans Saints</b><br>South</div>`)[0];
-                popup_cd3e91df8634ba5edb9804c758429ecb.setContent(html_b90e93f31361ce6b9a44d006e328b6cf);
+                var html_98406cdf2340558948fddc089ef8115f = $(`<div id="html_98406cdf2340558948fddc089ef8115f" style="width: 100.0%; height: 100.0%;">NFC South</div>`)[0];
+                popup_8c646397d7ae322d1ca8903bf7918b37.setContent(html_98406cdf2340558948fddc089ef8115f);
             
         
 
-        marker_5e87eae5a7e676fe8521d53492afe3f9.bindPopup(popup_cd3e91df8634ba5edb9804c758429ecb)
+        marker_31def3efd5f4c716d1dc5df7cc4ce546.bindPopup(popup_8c646397d7ae322d1ca8903bf7918b37)
         ;
 
         
     
     
-            marker_5e87eae5a7e676fe8521d53492afe3f9.bindTooltip(
+            marker_31def3efd5f4c716d1dc5df7cc4ce546.bindTooltip(
                 `<div>
                      New Orleans Saints
                  </div>`,
@@ -1777,18 +2228,35 @@
             );
         
     
-                marker_5e87eae5a7e676fe8521d53492afe3f9.setIcon(custom_icon_eec83f2828ba65b5f8a9bcb4425a615a);
+                marker_31def3efd5f4c716d1dc5df7cc4ce546.setIcon(custom_icon_b1d53235f448fe1fd52ecf4b7e4a396d);
             
     
-            var circle_marker_986d831ddb40bc7408c2a419abcfca7c = L.circleMarker(
-                [27.975833, -82.503333],
+            var circle_marker_5c1a001a47ec3e9b9c35f66d933d14d9 = L.circleMarker(
+                [29.950833, -90.081111],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_986d831ddb40bc7408c2a419abcfca7c.bindTooltip(
+        var popup_df74d289fa95fbfa2c5a2cfbb7610f46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b906f9935c84077b18daf6196310039c = $(`<div id="html_b906f9935c84077b18daf6196310039c" style="width: 100.0%; height: 100.0%;">New Orleans Saints'  Caesars Superdome</div>`)[0];
+                popup_df74d289fa95fbfa2c5a2cfbb7610f46.setContent(html_b906f9935c84077b18daf6196310039c);
+            
+        
+
+        circle_marker_5c1a001a47ec3e9b9c35f66d933d14d9.bindPopup(popup_df74d289fa95fbfa2c5a2cfbb7610f46)
+        ;
+
+        
+    
+    
+            circle_marker_5c1a001a47ec3e9b9c35f66d933d14d9.bindTooltip(
                 `<div>
-                     Original location: Tampa Bay Buccaneers
+                     Caesars Superdome
                  </div>`,
                 {
   "sticky": true,
@@ -1796,40 +2264,40 @@
             );
         
     
-            var marker_cda7bcedef9538c24e58ebf0a35ba8dd = L.marker(
+            var marker_5ad3e7f8c8dc21945b3c37a69a363e12 = L.marker(
                 [27.975833, -82.503333],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_8c60aa627cf3651d77e2b84893dc8c63 = L.icon({
+        var custom_icon_5df310ca34dcf6059658c63c074eff88 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/TB",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_cda7bcedef9538c24e58ebf0a35ba8dd.setIcon(custom_icon_8c60aa627cf3651d77e2b84893dc8c63);
+        marker_5ad3e7f8c8dc21945b3c37a69a363e12.setIcon(custom_icon_5df310ca34dcf6059658c63c074eff88);
         
     
-        var popup_8e681a65a7284afdb0eda7aec0c31a21 = L.popup({
+        var popup_00626c73b38950bf053a2a98cea513f8 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_33a98ed58bd09c135bd79bc38c0a2514 = $(`<div id="html_33a98ed58bd09c135bd79bc38c0a2514" style="width: 100.0%; height: 100.0%;"><b>Tampa Bay Buccaneers</b><br>South</div>`)[0];
-                popup_8e681a65a7284afdb0eda7aec0c31a21.setContent(html_33a98ed58bd09c135bd79bc38c0a2514);
+                var html_55ffae3cb1e97b9da524981960bc448c = $(`<div id="html_55ffae3cb1e97b9da524981960bc448c" style="width: 100.0%; height: 100.0%;">NFC South</div>`)[0];
+                popup_00626c73b38950bf053a2a98cea513f8.setContent(html_55ffae3cb1e97b9da524981960bc448c);
             
         
 
-        marker_cda7bcedef9538c24e58ebf0a35ba8dd.bindPopup(popup_8e681a65a7284afdb0eda7aec0c31a21)
+        marker_5ad3e7f8c8dc21945b3c37a69a363e12.bindPopup(popup_00626c73b38950bf053a2a98cea513f8)
         ;
 
         
     
     
-            marker_cda7bcedef9538c24e58ebf0a35ba8dd.bindTooltip(
+            marker_5ad3e7f8c8dc21945b3c37a69a363e12.bindTooltip(
                 `<div>
                      Tampa Bay Buccaneers
                  </div>`,
@@ -1839,18 +2307,35 @@
             );
         
     
-                marker_cda7bcedef9538c24e58ebf0a35ba8dd.setIcon(custom_icon_8c60aa627cf3651d77e2b84893dc8c63);
+                marker_5ad3e7f8c8dc21945b3c37a69a363e12.setIcon(custom_icon_5df310ca34dcf6059658c63c074eff88);
             
     
-            var circle_marker_c56d13757472c6b3e64329001a3e16b6 = L.circleMarker(
-                [33.528, -112.263],
+            var circle_marker_9fbfa063d1e6e3243e71a7938d5b3dee = L.circleMarker(
+                [27.975833, -82.503333],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_c56d13757472c6b3e64329001a3e16b6.bindTooltip(
+        var popup_e21f09fd77256728f7d1f001ed94ac4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e4c9191fa44dc0a94ce1379fade5c1e = $(`<div id="html_8e4c9191fa44dc0a94ce1379fade5c1e" style="width: 100.0%; height: 100.0%;">Tampa Bay Buccaneers'  Raymond James Stadium</div>`)[0];
+                popup_e21f09fd77256728f7d1f001ed94ac4d.setContent(html_8e4c9191fa44dc0a94ce1379fade5c1e);
+            
+        
+
+        circle_marker_9fbfa063d1e6e3243e71a7938d5b3dee.bindPopup(popup_e21f09fd77256728f7d1f001ed94ac4d)
+        ;
+
+        
+    
+    
+            circle_marker_9fbfa063d1e6e3243e71a7938d5b3dee.bindTooltip(
                 `<div>
-                     Original location: Arizona Cardinals
+                     Raymond James Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1858,40 +2343,40 @@
             );
         
     
-            var marker_1982cc57234b1c7e9777c243655af35b = L.marker(
+            var marker_f63e01233a87a7a1524a18806f2886cb = L.marker(
                 [33.528, -112.263],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_ed593288cb2f7e95665eb1679990ca2d = L.icon({
+        var custom_icon_87d3d7b0ccaa3830bff1dcfe1ec79ae0 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/ARI",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_1982cc57234b1c7e9777c243655af35b.setIcon(custom_icon_ed593288cb2f7e95665eb1679990ca2d);
+        marker_f63e01233a87a7a1524a18806f2886cb.setIcon(custom_icon_87d3d7b0ccaa3830bff1dcfe1ec79ae0);
         
     
-        var popup_171bc3cb3f3494629ef070c2e6cea4bf = L.popup({
+        var popup_d1eb7520ff211978e7b38dbc875077a9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5547bf93695f2f1360b0732508c01015 = $(`<div id="html_5547bf93695f2f1360b0732508c01015" style="width: 100.0%; height: 100.0%;"><b>Arizona Cardinals</b><br>West</div>`)[0];
-                popup_171bc3cb3f3494629ef070c2e6cea4bf.setContent(html_5547bf93695f2f1360b0732508c01015);
+                var html_3209309c227a46c0919a8faa94514a84 = $(`<div id="html_3209309c227a46c0919a8faa94514a84" style="width: 100.0%; height: 100.0%;">NFC West</div>`)[0];
+                popup_d1eb7520ff211978e7b38dbc875077a9.setContent(html_3209309c227a46c0919a8faa94514a84);
             
         
 
-        marker_1982cc57234b1c7e9777c243655af35b.bindPopup(popup_171bc3cb3f3494629ef070c2e6cea4bf)
+        marker_f63e01233a87a7a1524a18806f2886cb.bindPopup(popup_d1eb7520ff211978e7b38dbc875077a9)
         ;
 
         
     
     
-            marker_1982cc57234b1c7e9777c243655af35b.bindTooltip(
+            marker_f63e01233a87a7a1524a18806f2886cb.bindTooltip(
                 `<div>
                      Arizona Cardinals
                  </div>`,
@@ -1901,18 +2386,35 @@
             );
         
     
-                marker_1982cc57234b1c7e9777c243655af35b.setIcon(custom_icon_ed593288cb2f7e95665eb1679990ca2d);
+                marker_f63e01233a87a7a1524a18806f2886cb.setIcon(custom_icon_87d3d7b0ccaa3830bff1dcfe1ec79ae0);
             
     
-            var circle_marker_655c0f08ac10bdfff0921889b0dc42db = L.circleMarker(
-                [33.95345, -118.3392],
+            var circle_marker_885eabc29d923f02858f340318d4e2df = L.circleMarker(
+                [33.528, -112.263],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_655c0f08ac10bdfff0921889b0dc42db.bindTooltip(
+        var popup_49f645bc52550df38c341464a9cbd354 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cf2a93922f047786c7f3b89d8174844 = $(`<div id="html_4cf2a93922f047786c7f3b89d8174844" style="width: 100.0%; height: 100.0%;">Arizona Cardinals'  State Farm Stadium</div>`)[0];
+                popup_49f645bc52550df38c341464a9cbd354.setContent(html_4cf2a93922f047786c7f3b89d8174844);
+            
+        
+
+        circle_marker_885eabc29d923f02858f340318d4e2df.bindPopup(popup_49f645bc52550df38c341464a9cbd354)
+        ;
+
+        
+    
+    
+            circle_marker_885eabc29d923f02858f340318d4e2df.bindTooltip(
                 `<div>
-                     Original location: Los Angeles Rams
+                     State Farm Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1920,40 +2422,40 @@
             );
         
     
-            var marker_62dac00f80cf376941bd4d4f8903d59b = L.marker(
+            var marker_dc83b836fe4eb8a23bf268694fc88c87 = L.marker(
                 [33.48047702702702, -119.32680880085469],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_53633a7a03d1fa41634eebfa736d6496 = L.icon({
+        var custom_icon_e744818586b051ad1efea4a1467783f2 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LA",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_62dac00f80cf376941bd4d4f8903d59b.setIcon(custom_icon_53633a7a03d1fa41634eebfa736d6496);
+        marker_dc83b836fe4eb8a23bf268694fc88c87.setIcon(custom_icon_e744818586b051ad1efea4a1467783f2);
         
     
-        var popup_d1a2c7ed245b7b3e4cd830c2f3ef0dd5 = L.popup({
+        var popup_0172d08ab63e98b0fb884e4ed2a7ecf5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_62736f6464fa0f9a231ca09e6e5ca682 = $(`<div id="html_62736f6464fa0f9a231ca09e6e5ca682" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Rams</b><br>West</div>`)[0];
-                popup_d1a2c7ed245b7b3e4cd830c2f3ef0dd5.setContent(html_62736f6464fa0f9a231ca09e6e5ca682);
+                var html_a2ea815433dc674576d00656aea7edc5 = $(`<div id="html_a2ea815433dc674576d00656aea7edc5" style="width: 100.0%; height: 100.0%;">NFC West</div>`)[0];
+                popup_0172d08ab63e98b0fb884e4ed2a7ecf5.setContent(html_a2ea815433dc674576d00656aea7edc5);
             
         
 
-        marker_62dac00f80cf376941bd4d4f8903d59b.bindPopup(popup_d1a2c7ed245b7b3e4cd830c2f3ef0dd5)
+        marker_dc83b836fe4eb8a23bf268694fc88c87.bindPopup(popup_0172d08ab63e98b0fb884e4ed2a7ecf5)
         ;
 
         
     
     
-            marker_62dac00f80cf376941bd4d4f8903d59b.bindTooltip(
+            marker_dc83b836fe4eb8a23bf268694fc88c87.bindTooltip(
                 `<div>
                      Los Angeles Rams
                  </div>`,
@@ -1963,18 +2465,35 @@
             );
         
     
-                marker_62dac00f80cf376941bd4d4f8903d59b.setIcon(custom_icon_53633a7a03d1fa41634eebfa736d6496);
+                marker_dc83b836fe4eb8a23bf268694fc88c87.setIcon(custom_icon_e744818586b051ad1efea4a1467783f2);
             
     
-            var circle_marker_8933e29d5ed055d0cc7bc2039201c4b6 = L.circleMarker(
-                [37.403, -121.97],
+            var circle_marker_2f90ccb168b71834f906141803674688 = L.circleMarker(
+                [33.95345, -118.3392],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_8933e29d5ed055d0cc7bc2039201c4b6.bindTooltip(
+        var popup_8b7c31cba03b9dc6f8055a15e15f21a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95601705df6d1b5b2568b9bdb1fc26c6 = $(`<div id="html_95601705df6d1b5b2568b9bdb1fc26c6" style="width: 100.0%; height: 100.0%;">Los Angeles Rams'  SoFi Stadium</div>`)[0];
+                popup_8b7c31cba03b9dc6f8055a15e15f21a6.setContent(html_95601705df6d1b5b2568b9bdb1fc26c6);
+            
+        
+
+        circle_marker_2f90ccb168b71834f906141803674688.bindPopup(popup_8b7c31cba03b9dc6f8055a15e15f21a6)
+        ;
+
+        
+    
+    
+            circle_marker_2f90ccb168b71834f906141803674688.bindTooltip(
                 `<div>
-                     Original location: San Francisco 49ers
+                     SoFi Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -1982,40 +2501,40 @@
             );
         
     
-            var marker_9340415351e4bc6ff5e8fe8dbf6bf0af = L.marker(
+            var marker_bc4ed26717b34fcf97e448aca2916baf = L.marker(
                 [37.403, -121.97],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_bbad92267e1d176f5fe8ac7ba9d419c8 = L.icon({
+        var custom_icon_cd204eba455f6f93989ad390606624c9 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/SF",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_9340415351e4bc6ff5e8fe8dbf6bf0af.setIcon(custom_icon_bbad92267e1d176f5fe8ac7ba9d419c8);
+        marker_bc4ed26717b34fcf97e448aca2916baf.setIcon(custom_icon_cd204eba455f6f93989ad390606624c9);
         
     
-        var popup_10f67d8c4ee8d9cfd2fda3bad02625d3 = L.popup({
+        var popup_1aae695410463fd60d8383546f272e63 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ac24d6092491d134064143add38d6136 = $(`<div id="html_ac24d6092491d134064143add38d6136" style="width: 100.0%; height: 100.0%;"><b>San Francisco 49ers</b><br>West</div>`)[0];
-                popup_10f67d8c4ee8d9cfd2fda3bad02625d3.setContent(html_ac24d6092491d134064143add38d6136);
+                var html_722d488b2bde1a06180b59628eedda85 = $(`<div id="html_722d488b2bde1a06180b59628eedda85" style="width: 100.0%; height: 100.0%;">NFC West</div>`)[0];
+                popup_1aae695410463fd60d8383546f272e63.setContent(html_722d488b2bde1a06180b59628eedda85);
             
         
 
-        marker_9340415351e4bc6ff5e8fe8dbf6bf0af.bindPopup(popup_10f67d8c4ee8d9cfd2fda3bad02625d3)
+        marker_bc4ed26717b34fcf97e448aca2916baf.bindPopup(popup_1aae695410463fd60d8383546f272e63)
         ;
 
         
     
     
-            marker_9340415351e4bc6ff5e8fe8dbf6bf0af.bindTooltip(
+            marker_bc4ed26717b34fcf97e448aca2916baf.bindTooltip(
                 `<div>
                      San Francisco 49ers
                  </div>`,
@@ -2025,18 +2544,35 @@
             );
         
     
-                marker_9340415351e4bc6ff5e8fe8dbf6bf0af.setIcon(custom_icon_bbad92267e1d176f5fe8ac7ba9d419c8);
+                marker_bc4ed26717b34fcf97e448aca2916baf.setIcon(custom_icon_cd204eba455f6f93989ad390606624c9);
             
     
-            var circle_marker_24f0ff97b5008878c45290498580cea0 = L.circleMarker(
-                [47.5952, -122.3316],
+            var circle_marker_9813481b10ce6a87af6fa24ff811921f = L.circleMarker(
+                [37.403, -121.97],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            circle_marker_24f0ff97b5008878c45290498580cea0.bindTooltip(
+        var popup_685823bdb8c35718a425493852447c37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1d3dc0ff04b0b6b56afd8671ad36469 = $(`<div id="html_e1d3dc0ff04b0b6b56afd8671ad36469" style="width: 100.0%; height: 100.0%;">San Francisco 49ers'  Levi's Stadium</div>`)[0];
+                popup_685823bdb8c35718a425493852447c37.setContent(html_e1d3dc0ff04b0b6b56afd8671ad36469);
+            
+        
+
+        circle_marker_9813481b10ce6a87af6fa24ff811921f.bindPopup(popup_685823bdb8c35718a425493852447c37)
+        ;
+
+        
+    
+    
+            circle_marker_9813481b10ce6a87af6fa24ff811921f.bindTooltip(
                 `<div>
-                     Original location: Seattle Seahawks
+                     Levi's Stadium
                  </div>`,
                 {
   "sticky": true,
@@ -2044,40 +2580,40 @@
             );
         
     
-            var marker_3db7318510727f948cfacd7dda707c2a = L.marker(
+            var marker_e7bf9464c822fb76b3db8f5be2bbe68c = L.marker(
                 [47.5952, -122.3316],
                 {
 }
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-        var custom_icon_d58be3401ed6923ddd9b873880aad470 = L.icon({
+        var custom_icon_40106229799ac0ac3c096d4f67883018 = L.icon({
   "iconUrl": "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/SEA",
   "iconSize": [30, 30],
   "iconAnchor": [15, 15],
   "popupAnchor": [0, -15],
 });
-        marker_3db7318510727f948cfacd7dda707c2a.setIcon(custom_icon_d58be3401ed6923ddd9b873880aad470);
+        marker_e7bf9464c822fb76b3db8f5be2bbe68c.setIcon(custom_icon_40106229799ac0ac3c096d4f67883018);
         
     
-        var popup_9d4758e78b03866d2d6add4cd0b5ad16 = L.popup({
+        var popup_1d3bddb24225ec8d0a3834769b0068e2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9f032e25d06358c86e1c37dad654378b = $(`<div id="html_9f032e25d06358c86e1c37dad654378b" style="width: 100.0%; height: 100.0%;"><b>Seattle Seahawks</b><br>West</div>`)[0];
-                popup_9d4758e78b03866d2d6add4cd0b5ad16.setContent(html_9f032e25d06358c86e1c37dad654378b);
+                var html_53300da471f6a86116f71c307e886b03 = $(`<div id="html_53300da471f6a86116f71c307e886b03" style="width: 100.0%; height: 100.0%;">NFC West</div>`)[0];
+                popup_1d3bddb24225ec8d0a3834769b0068e2.setContent(html_53300da471f6a86116f71c307e886b03);
             
         
 
-        marker_3db7318510727f948cfacd7dda707c2a.bindPopup(popup_9d4758e78b03866d2d6add4cd0b5ad16)
+        marker_e7bf9464c822fb76b3db8f5be2bbe68c.bindPopup(popup_1d3bddb24225ec8d0a3834769b0068e2)
         ;
 
         
     
     
-            marker_3db7318510727f948cfacd7dda707c2a.bindTooltip(
+            marker_e7bf9464c822fb76b3db8f5be2bbe68c.bindTooltip(
                 `<div>
                      Seattle Seahawks
                  </div>`,
@@ -2087,79 +2623,88 @@
             );
         
     
-                marker_3db7318510727f948cfacd7dda707c2a.setIcon(custom_icon_d58be3401ed6923ddd9b873880aad470);
+                marker_e7bf9464c822fb76b3db8f5be2bbe68c.setIcon(custom_icon_40106229799ac0ac3c096d4f67883018);
             
     
-            var poly_line_ffc7b3dd1c938ec076def4dcacef8232 = L.polyline(
+            var circle_marker_a5ed0f97502233af51a61c64837c02f1 = L.circleMarker(
+                [47.5952, -122.3316],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
+        
+    
+        var popup_ad355b5ffecb177461ed97364cbe2e11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d75255c8a0837cba66f9c47e3697fc6e = $(`<div id="html_d75255c8a0837cba66f9c47e3697fc6e" style="width: 100.0%; height: 100.0%;">Seattle Seahawks'  Lumen Field</div>`)[0];
+                popup_ad355b5ffecb177461ed97364cbe2e11.setContent(html_d75255c8a0837cba66f9c47e3697fc6e);
+            
+        
+
+        circle_marker_a5ed0f97502233af51a61c64837c02f1.bindPopup(popup_ad355b5ffecb177461ed97364cbe2e11)
+        ;
+
+        
+    
+    
+            circle_marker_a5ed0f97502233af51a61c64837c02f1.bindTooltip(
+                `<div>
+                     Lumen Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c149b190e80410dca74e8f5a14003ff5 = L.polyline(
                 [[25.958056, -80.238889], [42.091, -71.264], [41.28650097297297, -75.15677260722512], [42.774, -78.787]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_9920b5a6b147c73d616d81d2f89fd7b7 = L.polyline(
+            var poly_line_2f14b2252a47d66a2d160575c0ab41fc = L.polyline(
                 [[39.81512887175852, -77.82450678110692], [40.446667, -80.015833], [39.095, -84.516], [40.446667, -80.015833], [41.506111, -81.699444]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_e3dfc3640aa6131852e5b5a028ff0e23 = L.polyline(
+            var poly_line_c09d0e2a671532a9bb0754e211e81dee = L.polyline(
                 [[29.684722, -95.410833], [36.166389, -86.771389], [39.760056, -86.163806], [30.323889, -81.6375]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_d6f36eb53c707ae761e31da8c1072e12 = L.polyline(
+            var poly_line_ac5203de9ce8719dd198228cad1c3e88 = L.polyline(
                 [[39.048889, -94.483889], [39.7439, -105.0201], [36.090833, -115.183611], [34.42642297297297, -117.35159119914532]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_77f683de9b5afc74272b17103cc22162 = L.polyline(
+            var poly_line_8e83a12b20e4b5e9d64cf52336143663 = L.polyline(
                 [[32.747778, -97.092778], [38.37070512824148, -75.66271521889308], [39.900833, -75.1675], [40.34055502702702, -72.99194939277487]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_1d4f6e7ae81becd7cf5e36a48c7231ed = L.polyline(
+            var poly_line_8811e61acc779422d63e9fa909e60ee1 = L.polyline(
                 [[44.974, -93.258], [44.501389, -88.062222], [41.8623, -87.6167], [42.34, -83.045556]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_7f42d04ae4f08b4e4425270b8e657077 = L.polyline(
+            var poly_line_3de60de318e74a1d9a0834a2ac866931 = L.polyline(
                 [[33.755556, -84.4], [35.225833, -80.852778], [33.755556, -84.4], [29.950833, -90.081111], [33.755556, -84.4], [27.975833, -82.503333]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
     
-            var poly_line_05a4cc5616a3dddd7dc3fa62a23fb8f2 = L.polyline(
+            var poly_line_55351d28a38ea71ff0103ddd6389e35d = L.polyline(
                 [[33.528, -112.263], [33.48047702702702, -119.32680880085469], [37.403, -121.97], [47.5952, -122.3316]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
-        
-    
-            var polygon_a2e2e3b8f18e2bbd81ea5a6961c5007a = L.polygon(
-                [[49.0, -125.0], [49.0, -95.0], [40.5, -95.0], [40.5, -92.5], [38.0, -92.5], [32.0, -110.0], [32.0, -125.0]],
-                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
-        
-    
-            var polygon_cf48ed24f8e7795b89685d85dba95319 = L.polygon(
-                [[49.0, -95.0], [42.5, -81.5], [39.2, -75.8], [38.7, -84.0], [38.7, -85.0], [40.5, -85.0], [40.5, -95.0]],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
-        
-    
-            var polygon_43ee9d2259c690e7b02631900d6a85eb = L.polygon(
-                [[42.5, -81.5], [43.5, -79.0], [43.5, -69.5], [25.5, -79.0], [25.5, -81.5], [37.8, -75.0], [31.9, -98.0], [32.8, -98.0], [36.5, -84.0], [38.7, -84.0], [39.2, -75.8]],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
-        
-    
-            var polygon_29b138fcb309d40ab65f749fe82ef1a5 = L.polygon(
-                [[40.5, -92.5], [40.5, -85.0], [38.7, -85.0], [38.7, -84.0], [36.5, -84.0], [32.8, -98.0], [31.9, -98.0], [37.8, -75.0], [25.5, -81.5], [32.0, -110.0], [38.0, -92.5], [40.5, -92.5]],
-                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
-            ).addTo(map_64ab7476459db342885226d3bb00019b);
+            ).addTo(map_b01b57c1db301f84e18d70bbafcdcbc3);
         
 </script>
 </html>
